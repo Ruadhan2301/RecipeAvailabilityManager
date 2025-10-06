@@ -8,13 +8,14 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/recipe-manager">Recipes</RouterLink>
+        <RouterLink to="/recipe-creator">New Recipe</RouterLink>
       </nav>
     </div>
   </header>
 
-  <div class="body">
-    <RouterView />
-  </div>
+  <RouterView />
+
 </template>
 
 <style scoped>
@@ -27,6 +28,7 @@ header{
 nav{
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: right;
+  margin-right:1rem;
 }
 </style>

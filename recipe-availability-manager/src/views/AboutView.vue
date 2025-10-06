@@ -1,15 +1,17 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<script setup lang="ts">
+import ContentWrapper from '../components/ContentWrapper.vue'
+</script>
+
+<template>  
+  <ContentWrapper>
+    <template #header>
+      <h1 class="text-2xl font-bold mb-4">About Page</h1>
+    </template>
+    <template #body>
+      <p>Welcome to the About Page!</p>
+    </template>
+  </ContentWrapper>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>
