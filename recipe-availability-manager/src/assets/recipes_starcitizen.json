@@ -1,0 +1,13 @@
+{
+    "ingredients":[
+        { "id": 1, "display_name": "Basmati Rice", "description": "" }
+    ],
+    "recipes": [
+     {
+    "id": 1,
+    "display_name": "Vegetable Biryani",
+    "ingredients": [1,2,3,4]
+  }
+
+    ]
+}

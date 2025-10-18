@@ -1,0 +1,285 @@
+{
+    "ingredients":[
+        { "id": "1", "display_name": "Basmati Rice", "description": "" },
+        { "id": "2", "display_name": "Mixed Vegetables", "description": "" },
+        { "id": "3", "display_name": "Yogurt", "description": "" },
+        { "id": "4", "display_name": "Spices", "description": "" },
+
+        { "id": "5", "display_name": "Paneer", "description": "" },
+        { "id": "6", "display_name": "Tomato", "description": "" },
+        { "id": "7", "display_name": "Cream", "description": "" },
+        { "id": "8", "display_name": "Butter", "description": "" },
+
+        { "id": "9", "display_name": "Eggplant", "description": "" },
+        { "id": "10", "display_name": "Zucchini", "description": "" },
+        { "id": "11", "display_name": "Bell Pepper", "description": "" },
+
+        { "id": "12", "display_name": "Chickpeas", "description": "" },
+        { "id": "13", "display_name": "Mozzarella", "description": "" },
+        {"id": "14", "display_name": "Onion", "description": "" },
+        { "id": "15", "display_name": "Parmesan", "description": "" },
+        { "id": "16", "display_name": "Basil", "description": "" },
+        { "id": "17", "display_name": "Garlic", "description": "" },
+        { "id": "18", "display_name": "Olive oil", "description": "" },
+        { "id": "19", "display_name": "Arborio rice", "description": "" },
+        { "id": "20", "display_name": "Mushrooms", "description": "" },
+        { "id": "21", "display_name": "Avocado", "description": "" },
+        { "id": "22", "display_name": "Black Beans", "description": "" },
+        { "id": "23", "display_name": "Cauliflower", "description": "" },
+        { "id": "24", "display_name": "Parsley", "description": "" },
+        { "id": "25", "display_name": "Feta Cheese", "description": "" },
+        { "id": "26", "display_name": "Broccoli", "description": "" },
+        { "id": "27", "display_name": "Pie Crust", "description": "" },
+        { "id": "28", "display_name": "Cumin", "description": "" },
+        { "id": "29", "display_name": "Flour", "description": "" },
+        { "id": "30", "display_name": "Egg", "description": "" },
+        { "id": "31", "display_name": "Tofu", "description": "" },
+        { "id": "32", "display_name": "Rice Noodles", "description": "" },
+        { "id": "33", "display_name": "Soy sauce", "description": "" },
+        { "id": "34", "display_name": "Potatoes", "description": "" },
+        { "id": "35", "display_name": "Peas", "description": "" },
+        { "id": "36", "display_name": "Corn tortillas", "description": "" },
+        { "id": "37", "display_name": "Beans", "description": "" },
+        { "id": "38", "display_name": "Salsa", "description": "" },
+        { "id": "39", "display_name": "Turmeric", "description": ""},
+        { "id": "40", "display_name": "Spinach", "description":""},
+        { "id": "41", "display_name": "Ricotta", "description":""},
+        { "id": "42", "display_name": "Tomato sauce", "description":""},
+        { "id": "43", "display_name": "Cheese", "description":""},
+        { "id": "44", "display_name": "Rice", "description":""},
+        { "id": "46", "display_name": "Pasta sheets", "description":""},
+        { "id": "47", "display_name": "Lentils", "description":""},
+        { "id": "48", "display_name": "Carrot", "description":""},
+        { "id": "49", "display_name": "Pastry dough", "description":""},
+        { "id": "50", "display_name": "Pasta", "description":""},
+        { "id": "51", "display_name": "Sour cream", "description":""},
+        { "id": "52", "display_name": "Pasta sheets", "description":""},
+        { "id": "53", "display_name": "Celery", "description":""},
+        { "id": "54", "display_name": "Sushi rice", "description":""},
+        { "id": "55", "display_name": "Nori", "description":""},
+        { "id": "56", "display_name": "Bulgur", "description":""},
+        { "id": "57", "display_name": "Cucumber", "description":""},
+        { "id": "58", "display_name": "Mint", "description":""},
+        { "id": "59", "display_name": "Lemon", "description":""},
+        { "id": "61", "display_name": "Olives", "description":""},
+        { "id": "62", "display_name": "Oregano", "description":""}
+    ],
+    "recipes": [
+     {
+    "id": "1",
+    "display_name": "Vegetable Biryani",
+    "ingredients": [
+        {"ingredient_id": "1", "quantity": -1 },
+        {"ingredient_id": "2", "quantity": -1 },
+        {"ingredient_id": "3", "quantity": -1 },
+        {"ingredient_id": "4", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "2",
+    "display_name": "Paneer Butter Masala",
+    "ingredients": [
+        {"ingredient_id": "5", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "7", "quantity": -1 },
+        {"ingredient_id": "8", "quantity": -1 },
+        {"ingredient_id": "4", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "3",
+    "display_name": "Ratatouille",
+    "ingredients": [
+        {"ingredient_id": "9", "quantity": -1 },
+        {"ingredient_id": "10", "quantity": -1 },
+        {"ingredient_id": "11", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "4",
+    "display_name": "Chana Masala",
+    "ingredients": [
+        {"ingredient_id": "12", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "14", "quantity": -1 },
+        {"ingredient_id": "4", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "5",
+    "display_name": "Caprese Salad",
+    "ingredients": [ 
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "13", "quantity": -1 },
+        {"ingredient_id": "16", "quantity": -1 },
+        {"ingredient_id": "18", "quantity": -1 }
+        ]
+  },
+  {
+    "id": "6",
+    "display_name": "Mushroom Risotto",
+    "ingredients": [ 
+        {"ingredient_id": "19", "quantity": -1 },
+        {"ingredient_id": "20", "quantity": -1 },
+        {"ingredient_id": "14", "quantity": -1 },
+        {"ingredient_id": "15", "quantity": -1 }
+        ]
+  },
+  {
+    "id": "7",
+    "display_name": "Falafel",
+    "ingredients": [
+        {"ingredient_id": "12", "quantity": -1 },
+        {"ingredient_id": "17", "quantity": -1 },
+        {"ingredient_id": "24", "quantity": -1 },
+        {"ingredient_id": "28", "quantity": -1 }
+        ]
+  },
+  {
+    "id": "8",
+    "display_name": "Tofu Stir-Fry",
+    "ingredients": [
+        {"ingredient_id": "31", "quantity": -1 },
+        {"ingredient_id": "11", "quantity": -1 },
+        {"ingredient_id": "33", "quantity": -1 },
+        {"ingredient_id": "17", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "9",
+    "display_name": "Veggie Tacos",
+    "ingredients": [
+        {"ingredient_id": "36", "quantity": -1 },
+        {"ingredient_id": "37", "quantity": -1 },
+        {"ingredient_id": "21", "quantity": -1 },
+        {"ingredient_id": "38", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "10",
+    "display_name": "Aloo Gobi",
+    "ingredients": [
+        {"ingredient_id": "34", "quantity": -1 },
+        {"ingredient_id": "23", "quantity": -1 },
+        {"ingredient_id": "39", "quantity": -1 },
+        {"ingredient_id": "28", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "11",
+    "display_name": "Spinach Lasagna",
+    "ingredients": [
+        {"ingredient_id": "46", "quantity": -1 },
+        {"ingredient_id": "40", "quantity": -1 },
+        {"ingredient_id": "41", "quantity": -1 },
+        {"ingredient_id": "42", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "12",
+    "display_name": "Lentil Soup",
+    "ingredients": [
+        {"ingredient_id": "47", "quantity": -1 },
+        {"ingredient_id": "48", "quantity": -1 },
+        {"ingredient_id": "53", "quantity": -1 },
+        {"ingredient_id": "14", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "13",
+    "display_name": "Greek Salad",
+    "ingredients": [
+        {"ingredient_id": "57", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "25", "quantity": -1 },
+        {"ingredient_id": "61", "quantity": -1 },
+        {"ingredient_id": "62", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "17",
+    "display_name": "Shakshuka",
+    "ingredients": [
+        {"ingredient_id": "30", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "11", "quantity": -1 },
+        {"ingredient_id": "14", "quantity": -1 },
+        {"ingredient_id": "4", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "18",
+    "display_name": "Veggie Sushi Rolls",
+    "ingredients": [
+        {"ingredient_id": "54", "quantity": -1 },
+        {"ingredient_id": "55", "quantity": -1 },
+        {"ingredient_id": "57", "quantity": -1 },
+        {"ingredient_id": "21", "quantity": -1 },
+        {"ingredient_id": "48", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "19",
+    "display_name": "Stuffed Bell Peppers",
+    "ingredients": [
+        {"ingredient_id": "11", "quantity": -1 },
+        {"ingredient_id": "44", "quantity": -1 },
+        {"ingredient_id": "37", "quantity": -1 },
+        {"ingredient_id": "43", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "20",
+    "display_name": "Tabbouleh",
+    "ingredients": [
+        {"ingredient_id": "56", "quantity": -1 },
+        {"ingredient_id": "24", "quantity": -1 },
+        {"ingredient_id": "58", "quantity": -1 },
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "59", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "21",
+    "display_name": "Eggplant Parmesan",
+    "ingredients": [
+        {"ingredient_id": "9", "quantity": -1 },
+        {"ingredient_id": "42", "quantity": -1 },
+        {"ingredient_id": "13", "quantity": -1 },
+        {"ingredient_id": "15", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "23",
+    "display_name": "Mushroom Stroganoff",
+    "ingredients": [
+        {"ingredient_id": "20", "quantity": -1 },
+        {"ingredient_id": "51", "quantity": -1 },
+        {"ingredient_id": "14", "quantity": -1 },
+        {"ingredient_id": "50", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "24",
+    "display_name": "Tomato Basil Soup",
+    "ingredients": [
+        {"ingredient_id": "6", "quantity": -1 },
+        {"ingredient_id": "16", "quantity": -1 },
+        {"ingredient_id": "17", "quantity": -1 },
+        {"ingredient_id": "7", "quantity": -1 }
+    ]
+  },
+  {
+    "id": "25",
+    "display_name": "Vegetable Samosas",
+    "ingredients": [
+        {"ingredient_id": "34", "quantity": -1},
+        {"ingredient_id": "35", "quantity": -1},
+        {"ingredient_id": "4", "quantity": -1 },
+        {"ingredient_id": "49", "quantity": -1}
+    ]
+  }
+
+    ]
+}

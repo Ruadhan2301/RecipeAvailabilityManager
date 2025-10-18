@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RecipeCreatorView from '@/views/RecipeCreatorView.vue'
+import RecipeHubView from '@/views/RecipeHubView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/recipe-creator',
       name: 'recipe-creator',
       component: RecipeCreatorView,
+    },
+    {
+      path: '/recipe-hub',
+      name: 'recipe-hub',
+      component: RecipeHubView,
     },
   ],
 })
