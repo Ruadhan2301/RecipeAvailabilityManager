@@ -1,13 +1,336 @@
 {
     "ingredients":[
-        { "id": 1, "display_name": "Basmati Rice", "description": "" }
+        { "id": "favor_wikelo", "display_name": "Wikelo Favor", "description": "", "is_collective": false },
+        { "id": "scrip_merc", "display_name": "MG Scrip", "description": "", "is_collective": false },
+        { "id": "scrip_council", "display_name": "Council Scrip", "description": "", "is_collective": false },
+        { "id": "drive_asd", "display_name": "ASD Secure Drive", "description": "", "is_collective": false },
+        { "id": "ore_carinite", "display_name": "Carinite", "description": "", "is_collective": false },
+        { "id": "ore_carinite_pure", "display_name": "Carinite (Pure)", "description": "", "is_collective": false },
+        { "id": "ore_jaclium", "display_name": "Jaclium (Ore)", "description": "", "is_collective": false },
+        { "id": "ore_saldynium", "display_name": "Saldynium (Ore)", "description": "", "is_collective": false },
+        { "id": "ore_janalite", "display_name": "Janalite", "description": "", "is_collective": false },
+        { "id": "ore_atlasium", "display_name": "Atlasium", "description": "", "is_collective": false },
+        { "id": "ore_quant", "display_name": "Quantainium", "description": "", "is_collective": false },
+        { "id": "ore_copper", "display_name": "Copper", "description": "", "is_collective": false },
+        { "id": "ore_tungsten", "display_name": "Tungsten", "description": "", "is_collective": false },
+        { "id": "ore_corundum", "display_name": "Corundum", "description": "", "is_collective": false },
+        
+        { "id": "harvestable_valakkar_pearl_aaa", "display_name": "Irradiated Valakkar Pearl (AAA)", "description": "", "is_collective": false },
+        { "id": "harvestable_valakkar_fang_juve", "display_name": "Irradiated Valakkar Fang (Juvenile)", "description": "", "is_collective": false },
+        { "id": "harvestable_valakkar_fang_adult", "display_name": "Irradiated Valakkar Fang (Adult)", "description": "", "is_collective": false },
+        { "id": "harvestable_yormandi_scale", "display_name": "Yormandi Scale", "description": "", "is_collective": false },
+        { "id": "harvestable_yormandi_eye", "display_name": "Yormandi Eye", "description": "", "is_collective": false },
+        { "id": "harvestable_yormandi_tongue", "display_name": "Yormandi Tongue", "description": "", "is_collective": false },
+        { "id": "harvestable_kopion_irrad_horn", "display_name": "Irradiated Kopion Horn", "description": "", "is_collective": false },
+        { "id": "harvestable_kopion_tundra_horn", "display_name": "Tundra Kopion Horn", "description": "", "is_collective": false },
+        { "id": "harvestable_quasigrazer_grassland_egg", "display_name": "Grassland Quasi Grazer Egg", "description": "", "is_collective": false },
+        
+        { "id": "weapon_parallax", "display_name": "Parallax Energy Assault Rifle", "description": "", "is_collective": false },
+        { "id": "weapon_prism", "display_name": "Prism Laser Shotgun", "description": "", "is_collective": false },
+        { "id": "weapon_zenith", "display_name": "Zenith Sniper Rifle", "description": "", "is_collective": false },
+        { "id": "weapon_quartz", "display_name": "Quartz Energy SMG", "description": "", "is_collective": false },
+        { "id": "weapon_fresnel", "display_name": "Fresnel Energy LMG", "description": "", "is_collective": false },
+        { "id": "weapon_karna", "display_name": "Karna Rifle", "description": "", "is_collective": false },
+        { "id": "weapon_s71", "display_name": "S71 Rifle", "description": "", "is_collective": false },
+        { "id": "weapon_coda", "display_name": "Coda Pistol", "description": "", "is_collective": false },
+        { "id": "weapon_f55", "display_name": "F55 LMG", "description": "", "is_collective": false },
+        { "id": "weapon_pistol_wowblast_red", "display_name": "WowBlast Desperado Toy Pistol Red", "description": "", "is_collective": false },
+        { "id": "weapon_scourge_railgun", "display_name": "Scourge Railgun", "description": "", "is_collective": false },
+
+        { "id": "other_rcmbnt-pwl-1", "display_name": "RCMBNT-PWL-1", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-pwl-2", "display_name": "RCMBNT-PWL-2", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-pwl-3", "display_name": "RCMBNT-PWL-3", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-rgl-1", "display_name": "RCMBNT-RGL-1", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-rgl-2", "display_name": "RCMBNT-RGL-2", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-rgl-3", "display_name": "RCMBNT-RGL-3", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-xtl-1", "display_name": "RCMBNT-XTL-1", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-xtl-2", "display_name": "RCMBNT-XTL-2", "description": "", "is_collective": false },
+        { "id": "other_rcmbnt-xtl-3", "display_name": "RCMBNT-XTL-3", "description": "", "is_collective": false },
+        { "id": "other_advocacy_badge", "display_name": "Advocacy Badge (Replica)", "description": "", "is_collective": false },
+        { "id": "other_medal_tevarin_pristine", "display_name": "Tevarin War Service Marker (Pristine)", "description": "", "is_collective": false },
+        { "id": "other_medal_gov_cart_pristine", "display_name": "Government Cartography Agency Medal (Pristine)", "description": "", "is_collective": false },
+        { "id":"other_medal_6thplatoon_pristine","display_name":"UEE 6th Platoon Medal (Pristine)","description":"","is_collective":false},
+        { "id":"other_polaris_bit","display_name":"Polaris Bit","description":"","is_collective":false},
+        { "id":"other_finley_plushie","display_name":"Finley the Stormwal Large Plushie","description":"","is_collective":false},
+        { "id":"other_picoball","display_name":"Picoball","description":"","is_collective":false},
+        { "id": "other_dchs_01_compboard", "display_name": "DCHS-01 Orbital Positioning Comp-Board", "description": "", "is_collective": false },
+        { "id": "other_dchs_02_compboard", "display_name": "DCHS-02 Orbital Positioning Comp-Board", "description": "", "is_collective": false },
+        { "id": "other_dchs_03_compboard", "display_name": "DCHS-03 Orbital Positioning Comp-Board", "description": "", "is_collective": false },
+        { "id": "other_dchs_04_compboard", "display_name": "DCHS-04 Orbital Positioning Comp-Board", "description": "", "is_collective": false },
+        { "id": "other_dchs_05_compboard", "display_name": "DCHS-05 Orbital Positioning Comp-Board", "description": "", "is_collective": false },
+        
+        
+        { "id": "armor_helmet_ace", "display_name": "Ace Interceptor Helmet", "description": "", "is_collective": false },
+        { "id": "armor_helmet_xanthule", "display_name": "Xanthule Helmet", "description": "", "is_collective": false },
+        { "id": "armor_suit_xanthule", "display_name": "Xanthule Suit", "description": "", "is_collective": false },
+        { "id": "armor_helmet_xanthule_ascension", "display_name": "Xanthule Ascension Helmet", "description": "", "is_collective": false },
+        { "id": "armor_suit_xanthule_ascension", "display_name": "Xanthule Ascension Suit", "description": "", "is_collective": false },
+        { "id": "armor_helmet_novikov", "display_name": "Novikov Helmet", "description": "", "is_collective": false },
+        { "id": "armor_suit_novikov", "display_name": "Novikov Suit", "description": "", "is_collective": false },
+        { "id": "armor_helmet_venture_white", "display_name": "Venture Helmet White", "description": "", "is_collective": false },
+        { "id": "armor_torso_venture", "display_name": "Venture Core", "description": "", "is_collective": false },
+        { "id": "armor_arms_venture", "display_name": "Venture Arms", "description": "", "is_collective": false },
+        { "id": "armor_legs_venture", "display_name": "Venture Legs", "description": "", "is_collective": false },
+        
+        { "id": "armor_helmet_palatino", "display_name": "Palatino Helmet", "description": "", "is_collective": false },
+        { "id": "armor_torso_palatino", "display_name": "Palatino Core", "description": "", "is_collective": false },
+        { "id": "armor_arms_palatino", "display_name": "Palatino Arms", "description": "", "is_collective": false },
+        { "id": "armor_legs_palatino", "display_name": "Palatino Legs", "description": "", "is_collective": false },
+        { "id": "armor_backpack_palatino", "display_name": "Palatino Backpack", "description": "", "is_collective": false },
+        
+        { "id": "armor_helmet_geist_asd", "display_name": "Geist ASD Helmet", "description": "", "is_collective": false },
+        { "id": "armor_torso_geist_asd", "display_name": "Geist ASD Core", "description": "", "is_collective": false },
+        { "id": "armor_arms_geist_asd", "display_name": "Geist ASD Arms", "description": "", "is_collective": false },
+        { "id": "armor_legs_geist_asd", "display_name": "Geist ASD Legs", "description": "", "is_collective": false },
+        { "id": "armor_backpack_geist_asd", "display_name": "Geist ASD Backpack", "description": "", "is_collective": false },
+        
+        { "id": "armor_helmet_corbel_mire", "display_name": "Corbel Mire Helmet", "description": "", "is_collective": false },
+        { "id": "armor_torso_corbel_mire", "display_name": "Corbel Mire Core", "description": "", "is_collective": false },
+        { "id": "armor_arms_corbel_mire", "display_name": "Corbel Mire Arms", "description": "", "is_collective": false },
+        { "id": "armor_legs_corbel_mire", "display_name": "Corbel Mire Legs", "description": "", "is_collective": false },
+        { "id": "armor_backpack_corbel_mire", "display_name": "Novikov Mire Backpack", "description": "", "is_collective": false },
+        
+        { "id": "armor_helmet_adp_mk4_woodland", "display_name": "ADP Mk4 Helmet Woodland", "description": "", "is_collective": false },
+        { "id": "armor_torso_adp_mk4_woodland", "display_name": "ADP Mk4 Core Woodland", "description": "", "is_collective": false },
+        { "id": "armor_arms_adp_mk4_woodland", "display_name": "ADP Mk4 Arms Woodland", "description": "", "is_collective": false },
+        { "id": "armor_legs_adp_mk4_woodland", "display_name": "ADP Mk4 Legs Woodland", "description": "", "is_collective": false },
+        { "id": "armor_backpack_adp_mk4_woodland", "display_name": "ADP Mk4 Backpack Woodland", "description": "", "is_collective": false },
+        
+        { "id": "armor_helmet_antium", "display_name": "Antium Helmet", "description": "", "is_collective": false },
+        { "id": "armor_torso_antium", "display_name": "Antium Core", "description": "", "is_collective": false },
+        { "id": "armor_arms_antium", "display_name": "Antium Arms", "description": "", "is_collective": false },
+        { "id": "armor_legs_antium", "display_name": "Antium Legs", "description": "", "is_collective": false },
+        
+        { "id": "vehicle_atls", "display_name": "Argo ATLS", "description": "", "is_collective": false },
+        { "id": "vehicle_atls_geo", "display_name": "Argo ATLS Geo", "description": "", "is_collective": false },
+        { "id": "vehicle_atls_ikti", "display_name": "Argo ATLS Ikti", "description": "", "is_collective": false },
+        { "id": "vehicle_atls_geo_ikti", "display_name": "Argo ATLS Geo Ikti", "description": "", "is_collective": false },
+        
+        { "id": "vehicle_weap_nn13", "display_name": "NN-13 Cannon", "description": "", "is_collective": false }
     ],
     "recipes": [
      {
-    "id": 1,
-    "display_name": "Vegetable Biryani",
-    "ingredients": [1,2,3,4]
+    "id": "wikelo_favor_merc_scrip",
+    "display_name": "Trade Merc Scrip for Favors?",
+    "description": "1x Wikelo Favor for 50x MG Scrip",
+    "ingredients": [{"ingredient_id":"scrip_merc","quantity":50}]
+  },
+  {    "id": "wikelo_favor_council_scrip",
+    "display_name": "Trade Council Scrip for Favors?",
+    "description": "1x Wikelo Favor for 50x Council Scrip",
+    "ingredients": [{"ingredient_id":"scrip_council","quantity":50}]
+  },
+  {
+    "id": "wikelo_favor_carinite",
+    "display_name": "Turn Things to Favor",
+    "description": "1x Wikelo Favor for 50x Carinite",
+    "ingredients": [{"ingredient_id":"ore_carinite","quantity":50}]
+  },
+  {    "id": "wikelo_favor_worm",
+    "display_name": "Trade Worm Parts for Favors?",
+    "description": "1x Wikelo Favor",
+    "ingredients": [
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":12}
+    ]
+  },
+  {
+    "id": "other_polaris_bit",
+    "display_name": "Want Polaris? Need something special.",
+    "description": "1x Polaris Bit for 24scu of Quantainium",
+    "ingredients": [
+      {"ingredient_id":"ore_quant","quantity":24}
+    ]
+  },
+  {
+    "id": "util_binoculars_xdl_mark1",
+    "display_name": "Want Better Eyes",
+    "description": "XDL 'Mark I' Monocular Rangefinder",
+    "ingredients": [
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id": "harvestable_yormandi_eye", "quantity": 2},
+      {"ingredient_id": "harvestable_yormandi_tongue", "quantity": 1}
+    ]
+  },
+  {    "id": "weapon_parallax_kopion_skull",
+    "display_name": "Fun Kopion Skull Gun", 
+    "description": "1x Parallax 'Fun Kopion Skull' Energy Assault Rifle",
+    "ingredients": [
+      {"ingredient_id":"ore_jaclium","quantity":40},
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"weapon_parallax","quantity":1},
+      {"ingredient_id":"harvestable_kopion_tundra_horn","quantity":35}
+    ]
+  },
+  {    
+    "id": "weapon_parallax_military_skull",
+    "display_name": "Fun Military Skull Gun", 
+    "description": "1x Parallax 'Fun Military Skull' Energy Assault Rifle",
+    "ingredients": [
+      {"ingredient_id":"ore_jaclium","quantity":40},
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"weapon_parallax","quantity":1},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":35}
+    ]
+  },
+  {    
+    "id": "weapon_parallax_kopion_tooth",
+    "display_name": "Fun Kopion Tooth Gun", 
+    "description": "1x Parallax 'Fun Kopion Tooth' Energy Assault Rifle",
+    "ingredients": [
+      {"ingredient_id":"ore_jaclium","quantity":40},
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"weapon_parallax","quantity":1},
+      {"ingredient_id":"harvestable_kopion_tundra_horn","quantity":35}
+    ]
+  },
+  {    
+    "id": "weapon_parallax_military_tooth",
+    "display_name": "Fun Military Tooth Gun", 
+    "description": "1x Parallax 'Fun Military Tooth' Energy Assault Rifle",
+    "ingredients": [
+      {"ingredient_id":"ore_jaclium","quantity":40},
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"weapon_parallax","quantity":1},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":35}
+    ]
+  },
+  {    
+    "id": "weapon_prism_rad",
+    "display_name": "Make VOLT shotgun angrier", 
+    "description": "1x Prism 'Irradiated' Laser Shotgun",
+    "ingredients": [
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id":"weapon_prism","quantity":1},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":5}
+    ]
+  },
+  {    
+    "id": "weapon_zenith_snow",
+    "display_name": "Snow Snipe", 
+    "description": "1x Zenith 'Snow Camo' Laser Sniper Rifle",
+    "ingredients": [
+      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"weapon_zenith","quantity":1}
+    ]
+  },
+  {    
+    "id": "weapon_fresnel_deepwater",
+    "display_name": "Heavy Volt Zapper", 
+    "description": "1x Fresnel 'Deepwater' Energy LMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_fresnel","quantity":1},      
+      {"ingredient_id":"drive_asd","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":5}
+    ]
+  },
+  {    
+    "id": "weapon_fresnel_yormandi",
+    "display_name": "Yormandi Gun", 
+    "description": "1x Fresnel 'Yormandi' LMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_fresnel","quantity":1},    
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":2},
+      {"ingredient_id":"ore_carinite","quantity":20}
+    ]
+  },
+  {    
+    "id": "weapon_quartz_navy",
+    "display_name": "Volt gun more Navy-like", 
+    "description": "1x Quartz 'Cobalt Camo' Energy SMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_quartz","quantity":1},    
+      {"ingredient_id":"scrip_merc","quantity":30},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"harvestable_quasigrazer_grassland_egg","quantity":50}
+    ]
+  },
+  {    
+    "id": "weapon_quartz_jungle",
+    "display_name": "Zappy gun more woodlike", 
+    "description": "1x Quartz 'Jungle Camo' Energy SMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_quartz","quantity":1},    
+      {"ingredient_id":"scrip_merc","quantity":30},
+      {"ingredient_id":"armor_helmet_ace","quantity":5}
+    ]
+  },
+  {    
+    "id": "weapon_quartz_hunter",
+    "display_name": "Make gun sandy", 
+    "description": "1x Quartz 'Hunter Camo' Energy SMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_quartz","quantity":1},    
+      {"ingredient_id":"scrip_merc","quantity":30},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_advocacy_badge","quantity":10}
+    ]
+  },
+  {    
+    "id": "weapon_karna_ascension",
+    "display_name": "Prettify Karna Gun", 
+    "description": "1x Karna 'Ascension' Rifle",
+    "ingredients": [
+      {"ingredient_id":"weapon_karna","quantity":1},    
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":10},
+      {"ingredient_id":"harvestable_kopion_irrad_horn","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1}
+    ]
+  },
+  {    
+    "id": "weapon_s71_ascension",
+    "display_name": "Built on S71 rifle", 
+    "description": "1x S71 'Ascension' Rifle",
+    "ingredients": [
+      {"ingredient_id":"weapon_s71","quantity":1},    
+      {"ingredient_id":"ore_carinite","quantity":10},
+      {"ingredient_id":"ore_saldynium","quantity":10},
+      {"ingredient_id":"ore_jaclium","quantity":10},
+      {"ingredient_id":"ore_carinite_pure","quantity":1}
+    ]
+  },
+  {    
+    "id": "weapon_coda_ascension",
+    "display_name": "Fix up Coda gun", 
+    "description": "1x Coda 'Ascension' Pistol",
+    "ingredients": [
+      {"ingredient_id":"weapon_coda","quantity":1},    
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1},
+      {"ingredient_id":"scrip_merc","quantity":30}
+    ]
+  },
+  {    
+    "id": "weapon_f55_mk1",
+    "display_name": "F55 look better", 
+    "description": "1x F55 'Mark 1' LMG",
+    "ingredients": [
+      {"ingredient_id":"weapon_f55","quantity":1},    
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":2},
+      {"ingredient_id":"ore_carinite","quantity":20}
+    ]
+  },
+  {    
+    "id": "armor_xanthule_ascension",
+    "display_name": "Xi'an Xanthule Suit made better", 
+    "description": "1x Xanthule Ascension Helmet and suit",
+    "ingredients": [
+      {"ingredient_id":"armor_suit_xanthule","quantity":1},
+      {"ingredient_id":"armor_helmet_xanthule","quantity":1},  
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1},
+      {"ingredient_id":"scrip_council","quantity":20}
+    ]
   }
 
-    ]
+  ]
 }
