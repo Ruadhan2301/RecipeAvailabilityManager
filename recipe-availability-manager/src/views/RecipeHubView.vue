@@ -36,34 +36,32 @@ function isRecipeFulfilled(recipe: { ingredients: MetaIngredient[] }) {
   //return recipe.ingredients.every(ingredient => recipeStore.selectedIDs.findIndex(item => item.ingredient_id == ingredient.ingredient_id) != -1);
 }
 
-watch(
-  () => recipeStore.recipes,
-  (newVal) => {
-    console.log('recipes changed:', newVal);
-  },
-  { deep: true }
-);
+function recipeFulfillmentPercent(recipe: { ingredients: MetaIngredient[] }) {
+  const totalRequired = recipe.ingredients.reduce((sum, ing) => sum + (ing.quantity ?? 0), 0);
+  if (totalRequired === 0) return 100;
+  const matched = recipe.ingredients.reduce((sum, ing) => {
+    const selected = recipeStore.selectedIDs.find(s => s.ingredient_id === ing.ingredient_id);
+    return sum + Math.min(selected?.quantity ?? 0, ing.quantity ?? 0);
+  }, 0);
+  return Math.round((matched / totalRequired) * 100);
+}
 
-watch(
-  () => recipeStore.ingredients,
-  (newVal) => {
-    console.log('ingredients changed:', newVal);
-  },
-  { deep: true }
-);
+function recipeIngredientFulfillmentPercent(ingredient:MetaIngredient) {
+  const selectedQuant = recipeStore.selectedIDs.find(s => s.ingredient_id === ingredient.ingredient_id)?.quantity ?? 0;
+  const totalRequired = ingredient.quantity ?? 1;
+  return Math.round((Math.min(selectedQuant, totalRequired) / totalRequired) * 100)
+}
 
-watch(
-  () => recipeStore.selectedIDs.values,
-  (newVal) => {
-    console.log('selectedIDs changed:', newVal);
-  },
-  { deep: true }
-);
 watch(
   () => recipeStore.selectedIDs.values,
   (newVal) => console.log('selectedIDs changed:', newVal)
 );
 
+function updateIngredientSelectedCount(id:string, value:number){
+  let text = "Setting " + id + " to " + value;
+  console.log(text);
+  recipeStore.SetIngredientSelectedQuantity(id, value);
+}
 
 </script>
 
@@ -118,21 +116,13 @@ watch(
               color:green;
               pointer-events: none;
             " />-->
-            
                 <CounterCheckBox 
                   :model-value="recipeStore.selectedIDs.find(item => item.ingredient_id == ingredient.id)?.quantity" 
                   :max="ingredient.is_collective ? 1 : 999"
                   @update:increment="recipeStore.AddIngredientSelected(ingredient.id,1)"
                   @update:decrement="recipeStore.RemoveIngredientSelected(ingredient.id,1)" 
                   @update:toggle="recipeStore.toggleIngredientSelected(ingredient.id)"
-                  @update:modelValue="(value: number) => {
-                    console.log('New value for ingredient', ingredient.id, ':', value);
-                    if (value > 0) {
-                      recipeStore.AddIngredientSelected(ingredient.id, value);
-                    } else {
-                      recipeStore.RemoveIngredientSelected(ingredient.id, ingredient.is_collective ? 1 : 999);
-                    }
-                  }"
+                  @update:modelValue="(value: number) => updateIngredientSelectedCount(ingredient.id,value)"
                   style="margin-left:auto;"              
                 />
           </div>
@@ -147,18 +137,18 @@ watch(
       <template #body>
         <p>List of recipes sorted and filtered by available ingredients</p>
         <div v-for="recipe in recipeStore.sortedRecipes" :key="recipe.id">
-          <div class="d-flex p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
-            <div class="w-50">
-            <h2 class="font-bold">{{ recipe.display_name }}</h2>
-            <p>{{ recipe.description }}</p>
+          <div class="w-flex p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
+            <div class="w-split">
+              <h2 class="font-bold">{{ recipe.display_name }}</h2>
+              <p>{{ recipe.description }}</p>
             </div>
-            <div class="w-50">
+            <div class="w-split">
               <p >Ingredients:</p>
               <ul>
-                <li v-for="ingData in recipe.ingredients" :key="ingData.ingredient_id" class="d-flex my-1 px-2" style="cursor: pointer;" 
+                <li v-for="ingData in recipe.ingredients" :key="ingData.ingredient_id" class="d-flex my-1 px-2 relative" style="cursor: pointer;" 
                 :class="recipeStore.selectedIDs.findIndex(item => item.ingredient_id == ingData.ingredient_id && item.quantity >= ingData.quantity) != -1 ? 'completed' : ''">
-                  <div style="width:auto;">{{ recipeStore.ingredients.find(ing => ing.id === ingData.ingredient_id)?.display_name || 'Unknown Ingredient' + ingData.ingredient_id }} <span v-if="ingData.quantity > 0">x{{ ingData.quantity }}</span></div>
-                  
+                <div style="z-index:-1; background-color: #d4edda; position:absolute; left:0;top:0;bottom:0;" :style="{ right: (100 - recipeIngredientFulfillmentPercent(ingData)) + '%' }"></div>  
+                <div class="my-2" style="width:auto;">{{ recipeStore.ingredients.find(ing => ing.id === ingData.ingredient_id)?.display_name || 'Unknown Ingredient' + ingData.ingredient_id }} <span v-if="ingData.quantity > 0">x{{ ingData.quantity }}</span></div>
                   <CounterCheckBox 
                     :model-value="recipeStore.selectedIDs.find(item => item.ingredient_id == ingData.ingredient_id)?.quantity || 0" 
                     :max="ingData.quantity"
@@ -168,9 +158,10 @@ watch(
                       console.log('New value for ingredient', ingData.ingredient_id, ':', value);
                       recipeStore.SetIngredientSelectedQuantity(ingData.ingredient_id, value);
                     }"
-                    class="ml-auto"
+                    class="ml-auto my-1"
                     style="margin-left:auto;"              
                   />
+                  
                 </li>
               </ul>
             </div>
@@ -189,5 +180,20 @@ watch(
   .completed-recipe {
     background-color: #eef7f0;
     border: 2px solid #155724 !important;
+  }
+  
+  .w-split{
+    width:100% !important;
+  }
+  .w-flex{
+    display:block;
+  }
+  @media (min-width: 1280px) {
+    .w-flex{
+      display:flex;
+    }
+    .w-split {
+      width: 50% !important;
+    }
   }
 </style>

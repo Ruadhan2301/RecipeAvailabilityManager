@@ -20,6 +20,7 @@
     "@tailwindcss/vite": "^4.1.14",
     "bootstrap": "^5.3.8",
     "pinia": "^3.0.3",
+    "primeicons": "^7.0.0",
     "primevue": "^4.4.1",
     "tailwind": "^4.0.0",
     "tailwindcss": "^4.1.14",
