@@ -23,13 +23,17 @@ const {
 const recipeStore = useRecipeStore();
 
 onMounted(() => {
-  const url = new URL('../assets/recipes_veg.json', import.meta.url).href;
-  recipeStore.LoadFromJson();
+  recipeStore.LoadFromJson('../assets/recipes_starcitizen.json');
 });
 
 function isRecipeFulfilled(recipe: { ingredients: MetaIngredient[] }) {
   // Check if all ingredients in the recipe are present in selectedIDs, this does not consider quantity
-  return recipe.ingredients.every(ingredient => recipeStore.selectedIDs.findIndex(item => item.ingredient_id == ingredient.ingredient_id) != -1);
+  return recipe.ingredients.every(ing => {
+    const selected = recipeStore.selectedIDs.find(s => s.ingredient_id === ing.ingredient_id);
+    const required = typeof ing.quantity === 'number' ? ing.quantity : 0;
+    return !!selected && selected.quantity >= required;
+  });
+  //return recipe.ingredients.every(ingredient => recipeStore.selectedIDs.findIndex(item => item.ingredient_id == ingredient.ingredient_id) != -1);
 }
 
 watch(

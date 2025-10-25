@@ -90,9 +90,9 @@ const ingredients = ref<Ingredient[]>([]);
     return (matchCount / recipe.ingredients.length) * 100;
   }
 
-  async function LoadFromJson(){
+  async function LoadFromJson(path:string){
     //placeholder
-    await fetch(new URL('../assets/recipes_starcitizen.json', import.meta.url).href)    
+    await fetch(new URL(path, import.meta.url).href)    
       .then(response => response.json())
       .then((data: RecipeData) => {
         console.log(data);

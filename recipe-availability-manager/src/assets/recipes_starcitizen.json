@@ -18,6 +18,7 @@
         { "id": "harvestable_valakkar_pearl_aaa", "display_name": "Irradiated Valakkar Pearl (AAA)", "description": "", "is_collective": false },
         { "id": "harvestable_valakkar_fang_juve", "display_name": "Irradiated Valakkar Fang (Juvenile)", "description": "", "is_collective": false },
         { "id": "harvestable_valakkar_fang_adult", "display_name": "Irradiated Valakkar Fang (Adult)", "description": "", "is_collective": false },
+        { "id": "harvestable_valakkar_fang_apex", "display_name": "Irradiated Valakkar Fang (Apex)", "description": "", "is_collective": false },
         { "id": "harvestable_yormandi_scale", "display_name": "Yormandi Scale", "description": "", "is_collective": false },
         { "id": "harvestable_yormandi_eye", "display_name": "Yormandi Eye", "description": "", "is_collective": false },
         { "id": "harvestable_yormandi_tongue", "display_name": "Yormandi Tongue", "description": "", "is_collective": false },
@@ -88,7 +89,7 @@
         { "id": "armor_torso_corbel_mire", "display_name": "Corbel Mire Core", "description": "", "is_collective": false },
         { "id": "armor_arms_corbel_mire", "display_name": "Corbel Mire Arms", "description": "", "is_collective": false },
         { "id": "armor_legs_corbel_mire", "display_name": "Corbel Mire Legs", "description": "", "is_collective": false },
-        { "id": "armor_backpack_corbel_mire", "display_name": "Novikov Mire Backpack", "description": "", "is_collective": false },
+        { "id": "armor_backpack_novikov_mire", "display_name": "Novikov Mire Backpack", "description": "", "is_collective": false },
         
         { "id": "armor_helmet_adp_mk4_woodland", "display_name": "ADP Mk4 Helmet Woodland", "description": "", "is_collective": false },
         { "id": "armor_torso_adp_mk4_woodland", "display_name": "ADP Mk4 Core Woodland", "description": "", "is_collective": false },
@@ -334,266 +335,490 @@
   {
     "id" :"armor_novikov_ascension",
     "display_name":"Walk in danger, Look good",
-    "description":"",
-    "ingredients":[]
+    "description":"Novikov 'Ascension' Set",
+    "ingredients":[
+      {"ingredient_id":"armor_suit_novikov","quantity":1},
+      {"ingredient_id":"armor_helmet_novikov","quantity":1},
+      {"ingredient_id":"scrip_merc","quantity":30},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1}
+    ]
   },
   {
     "id" :"armor_venture_ascension",
     "display_name":"Adventure a A-Venture",
-    "description":"",
-    "ingredients":[]
+    "description":"Venture 'Ascension' Set",
+    "ingredients":[
+      {"ingredient_id":"armor_helmet_venture_white","quantity":1},
+      {"ingredient_id":"armor_torso_venture","quantity":1},
+      {"ingredient_id":"armor_legs_venture","quantity":1},
+      {"ingredient_id":"armor_arms_venture","quantity":1},
+      {"ingredient_id":"scrip_merc","quantity":30},
+      {"ingredient_id":"ore_saldynium","quantity":10},
+      {"ingredient_id":"ore_jaclium","quantity":10},
+      {"ingredient_id":"ore_carinite_pure","quantity":1}
+    ]
   },
   {
     "id" :"armor_palatino_test",
     "display_name":"Test Armor",
-    "description":"",
-    "ingredients":[]
+    "description":"Palatino Mark 1 Set",
+    "ingredients":[
+      {"ingredient_id":"armor_helmet_palatino","quantity":1},
+      {"ingredient_id":"armor_torso_palatino","quantity":1},
+      {"ingredient_id":"armor_legs_palatino","quantity":1},
+      {"ingredient_id":"armor_arms_palatino","quantity":1},
+      {"ingredient_id":"armor_backpack_palatino","quantity":1},
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":10}
+    ]
   },
   {
     "id" :"armor_geist_snow",
     "display_name":"Hide Snow Suit",
-    "description":"",
-    "ingredients":[]
+    "description":"Geist Snow Camo Set",
+    "ingredients":[
+      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"armor_helmet_geist_asd","quantity":1},
+      {"ingredient_id":"armor_torso_geist_asd","quantity":1},
+      {"ingredient_id":"armor_legs_geist_asd","quantity":1},
+      {"ingredient_id":"armor_arms_geist_asd","quantity":1},
+      {"ingredient_id":"armor_backpack_geist_asd","quantity":1}
+    ]
   },
   {
     "id":"armor_corbel_silver",
     "display_name":"Shiny Builder Suit",
-    "description":"",
-    "ingredients":[]
+    "description":"Corbel Crush Set",
+    "ingredients":[
+      {"ingredient_id":"armor_helmet_corbel_mire","quantity":1},
+      {"ingredient_id":"armor_torso_corbel_mire","quantity":1},
+      {"ingredient_id":"armor_legs_corbel_mire","quantity":1},
+      {"ingredient_id":"armor_arms_corbel_mire","quantity":1},
+      {"ingredient_id":"armor_backpack_novikov_mire","quantity":1},
+      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"other_rcmbnt-rgl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-3","quantity":5}
+    ]
   },
   {
     "id" :"armor_dcp_jungle",
     "display_name":"Want armor look like tree?",
-    "description":"",
-    "ingredients":[]
+    "description":"DCP Jungle Set",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":3},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":50},
+      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
+      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
+    ]
   },
   {
     "id" :"armor_dcp_hunter",
     "display_name":"Look at desert but don't see you",
-    "description":"",
-    "ingredients":[]
+    "description":"DCP Hunter Set",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":3},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_advocacy_badge","quantity":20},
+      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
+      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
+    ]
   },
   {
     "id" :"armor_dcp_navy",
     "display_name":"Make space navy armor",
-    "description":"",
-    "ingredients":[]
+    "description":"DCP Cobalt Camo Set",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":3},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"harvestable_quasigrazer_grassland_egg","quantity":5},
+      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
+      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
+      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
+    ]
   },
   {
     "id":"armor_ana_endro",
     "display_name":"Armor with horn and string",
-    "description":"",
-    "ingredients":[]
+    "description":"Ana Armor Endro Set",
+    "ingredients":[
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":15},
+      {"ingredient_id":"ore_jaclium","quantity":45},
+      {"ingredient_id":"ore_carinite_pure","quantity":1},
+      {"ingredient_id":"armor_torso_antium","quantity":1},
+      {"ingredient_id":"armor_helmet_antium","quantity":1},
+      {"ingredient_id":"armor_legs_antium","quantity":1},
+      {"ingredient_id":"armor_arms_antium","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"armor_bokto",
+    "display_name":"Make glowy armor",
+    "description":"Bokto Armor set",
+    "ingredients":[
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1},
+      {"ingredient_id":"armor_torso_antium","quantity":1},
+      {"ingredient_id":"armor_helmet_antium","quantity":1},
+      {"ingredient_id":"armor_legs_antium","quantity":1},
+      {"ingredient_id":"armor_arms_antium","quantity":1},
+      {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":2},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":15},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_atls_ikti",
+    "display_name":"Make ATLS shoot",
+    "description":"ATLS IKTI",
+    "ingredients":[
+      {"ingredient_id":"vehicle_atls","quantity":1},
+      {"ingredient_id":"favor_wikelo","quantity":3},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":5},
+      {"ingredient_id":"vehicle_weap_nn13","quantity":2}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_atls_geo_ikti",
+    "display_name":"Make jumpy ATLS shoot",
+    "description":"ATLS GEO IKTI",
+    "ingredients":[
+      {"ingredient_id":"vehicle_atls_geo","quantity":1},
+      {"ingredient_id":"vehicle_atls_ikti","quantity":1},
+      {"ingredient_id":"vehicle_weap_nn13","quantity":2},
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_atls_geo_snowland",
+    "display_name":"ATLS Snowland Color",
+    "description":"ATLS GEO 'Snowland'",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1},
+      {"ingredient_id":"vehicle_atls","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_atls_geo_orangeline",
+    "display_name":"ATLS Orange Line",
+    "description":"ATLS GEO 'Orange Line'",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id":"ore_quant","quantity":50},
+      {"ingredient_id":"vehicle_atls","quantity":1},
+      {"ingredient_id":"ore_copper","quantity":10},
+      {"ingredient_id":"ore_tungsten","quantity":10},
+      {"ingredient_id":"ore_corundum","quantity":10}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_atls_geo_coolmetal",
+    "display_name":"ATLS Cool Metal Color",
+    "description":"ATLS GEO 'Cool Metal'",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":1},
+      {"ingredient_id":"ore_carinite","quantity":10},
+      {"ingredient_id":"ore_carinite_pure","quantity":1},
+      {"ingredient_id":"vehicle_atls","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_nox",
+    "display_name":"Noxy Mod",
+    "description":"Aopoa Nox",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_pulse",
+    "display_name":"Pulse Plus",
+    "description":"Mirai Pulse",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_ursa_medivac",
+    "display_name":"Make a Ursa Mod",
+    "description":"Ursa Medivac",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":5},
+      {"ingredient_id":"ore_saldynium","quantity":5},
+      {"ingredient_id":"ore_jaclium","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_golem",
+    "display_name":"Golem Rocks",
+    "description":"Drake Golem",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":5},
+      {"ingredient_id":"drive_asd","quantity":15}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_intrepid",
+    "display_name":"Upgrade Intrepid",
+    "description":"Crusader Intrepid",
+    "ingredients":[
+      {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1},
+      {"ingredient_id":"favor_wikelo","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_fortune",
+    "display_name":"Fortune ship for you",
+    "description":"Misc Fortune",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":6},
+      {"ingredient_id":"ore_carinite_pure","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_spirit_c1",
+    "display_name":"Spirit cargo mod",
+    "description":"Crusader C1 Spirit",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":8},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":2}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_zeus_es",
+    "display_name":"Zeus Special",
+    "description":"Zeus Mk2 ES",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":10},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":2}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_zeus_cl",
+    "display_name":"Zeus Cargo Special",
+    "description":"Zeus Mk2 CL",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"ore_carinite","quantity":24},
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"ore_carinite_pure","quantity":2}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_starlancer_max",
+    "display_name":"More than a max",
+    "description":"Starlancer Max",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"ore_carinite_pure","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_constellation_taurus",
+    "display_name":"Want Taurus ship",
+    "description":"Constellation Taurus",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"ore_carinite_pure","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_sabre_peregrine",
+    "display_name":"Peregrine Wikelo Mod",
+    "description":"sabre Peregrine",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":8},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":4}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_sabre_firebird",
+    "display_name":"Firebird Mod",
+    "description":"Sabre Firebird",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":20},
+      {"ingredient_id":"other_polaris_bit","quantity":1},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":1},
+      {"ingredient_id":"armor_helmet_ace","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_scorpius",
+    "display_name":"Build a Mod Scorpius",
+    "description":"Scorpius",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":20},
+      {"ingredient_id":"other_polaris_bit","quantity":1},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":12},
+      {"ingredient_id":"ore_carinite","quantity":10}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_hornet_super",
+    "display_name":"Wikelo Navy F7",
+    "description":"F7C-M Super Hornet Mk II",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":20},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":6},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_guardian_qi",
+    "display_name":"Guardian take down ship",
+    "description":"Guardian QI",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":15},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":15},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_f8c_military",
+    "display_name":"F8 War Mod",
+    "description":"F8C Lightning (Military Spec)",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":40},
+      {"ingredient_id":"ore_carinite_pure","quantity":6},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":6},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":6},
+      {"ingredient_id":"vehicle_atls_ikti","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_f8c_stealth",
+    "display_name":"Sneaky Stabber",
+    "description":"F8C Lightning (Stealth Spec)",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":40},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":20},
+      {"ingredient_id":"ore_carinite_pure","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
+      {"ingredient_id":"armor_suit_xanthule_ascension","quantity":5},
+      {"ingredient_id":"armor_helmet_xanthule_ascension","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_terrapin_medivac",
+    "display_name":"What is Terrapin?",
+    "description":"Anvil Terrapin Medic",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"drive_asd","quantity":30},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_starlancer_tac",
+    "display_name":"New Move Big Starlancer Ship",
+    "description":"Misc Starlancer Tac",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"drive_asd","quantity":50},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_ares_inferno",
+    "display_name":"Starfighter Inferno Special",
+    "description":"Crusader Ares Inferno",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":15},
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
+      {"ingredient_id":"armor_helmet_ace","quantity":10},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_ares_ion",
+    "display_name":"Sneaky Starfighter Ion",
+    "description":"Crusader Ares Ion",
+    "ingredients":[      
+      {"ingredient_id":"favor_wikelo","quantity":15},
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
+      {"ingredient_id":"armor_helmet_ace","quantity":10},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_prowler_utility",
+    "display_name":"Prowler More Utility",
+    "description":"Prowler Utility",
+    "ingredients":[      
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
+      {"ingredient_id":"ore_carinite_pure","quantity":5}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_starlifter_a2",
+    "display_name":"Starlifter A2 War Mod",
+    "description":"A2 Hercules Starlifter",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"other_polaris_bit","quantity":20},
+      {"ingredient_id":"scrip_merc","quantity":20},
+      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":10},
+      {"ingredient_id": "other_medal_tevarin_pristine", "quantity": 10},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":10},
+      {"ingredient_id":"ore_carinite_pure","quantity":10}
+    ]
   },
   {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
-  },
-  {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
-  },
-  {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
-  },
-  {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
-  },
-  {
-    "id" :"armor_novikov_ascension",
-    "display_name":"",
-    "description":"",
-    "ingredients":[]
+    "id" :"vehicle_polaris",
+    "display_name":"New Make Polaris, Short Time Deal",
+    "description":"Wikelo Polaris",
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"other_polaris_bit","quantity":25},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":20},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":20},
+      {"ingredient_id":"scrip_merc","quantity":20},
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":20},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":20},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"other_finley_plushie","quantity":10},
+      {"ingredient_id":"other_picoball","quantity":1},
+      {"ingredient_id":"ore_janalite","quantity":5},
+      {"ingredient_id":"weapon_pistol_wowblast_red","quantity":1},
+      {"ingredient_id":"ore_atlasium","quantity":48},
+      {"ingredient_id":"weapon_scourge_railgun","quantity":10},
+      {"ingredient_id":"drive_asd","quantity":20},
+      {"ingredient_id":"other_rcmbnt-pwl-1","quantity":1},
+      {"ingredient_id":"other_rcmbnt-pwl-2","quantity":1},
+      {"ingredient_id":"other_rcmbnt-pwl-3","quantity":1},
+      {"ingredient_id":"other_rcmbnt-rgl-1","quantity":1},
+      {"ingredient_id":"other_rcmbnt-rgl-2","quantity":1},
+      {"ingredient_id":"other_rcmbnt-rgl-3","quantity":1},
+      {"ingredient_id":"other_rcmbnt-xtl-1","quantity":1},
+      {"ingredient_id":"other_rcmbnt-xtl-2","quantity":1},
+      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":1}
+    ]
   }
 
   ]
