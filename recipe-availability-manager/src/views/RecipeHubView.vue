@@ -2,9 +2,16 @@
 import type { MetaIngredient } from '@/models/ingredient';
 import ContentBox from '../components/ContentBox.vue'
 import { useRecipeStore } from '@/stores/recipe-store';
-import { onMounted, watch } from 'vue';
+import { onMounted, watch, ref } from 'vue';
 import CounterCheckBox from '@/components/CounterCheckBox.vue';
 import Button from 'primevue/button';
+import Tabs from 'primevue/tabs';
+import TabList from 'primevue/tablist';
+import Tab from 'primevue/tab';
+import TabPanels from 'primevue/tabpanels';
+import TabPanel from 'primevue/tabpanel';
+
+
 
 const {
   recipes,
@@ -21,6 +28,8 @@ const {
 } = useRecipeStore();
 
 const recipeStore = useRecipeStore();
+
+const mobileTab = ref('0');
 
 onMounted(() => {
   recipeStore.LoadFromJson('../assets/recipes_starcitizen.json');
@@ -66,8 +75,15 @@ function updateIngredientSelectedCount(id:string, value:number){
 </script>
 
 <template>
-  <div class="w-100 h-100 px-5" style="display: flex; gap: 1rem;">
-    <ContentBox>
+  <div>
+  <Tabs v-model:value="mobileTab" class="d-local-none">
+    <TabList>
+        <Tab value="0">Ingredients</Tab>
+        <Tab value="1">Recipes</Tab>
+    </TabList>
+</Tabs>
+  <div class="w-100 h-100 md:px-5 d-flex gap-2" style="flex-wrap: wrap;">    
+    <ContentBox class="w-100 w-split-33" :class="mobileTab != '0' ? 'd-local-block' : ''">
       <template #header>
         <h1 class="text-2xl font-bold mb-4">Ingredients</h1>
       </template>
@@ -130,7 +146,7 @@ function updateIngredientSelectedCount(id:string, value:number){
         </div>
       </template>
     </ContentBox>
-    <ContentBox class="w-100">
+    <ContentBox class="w-100 w-split-66" :class="mobileTab != '1' ? 'd-local-block' : ''">
       <template #header>
         <h1 class="text-2xl font-bold mb-4">Recipes</h1>
       </template>
@@ -170,6 +186,7 @@ function updateIngredientSelectedCount(id:string, value:number){
       </template>
     </ContentBox>
   </div>
+  </div>
 </template>
 
 <style>
@@ -182,13 +199,44 @@ function updateIngredientSelectedCount(id:string, value:number){
     border: 2px solid #155724 !important;
   }
   
+  .w-split-33{
+    max-width: 100%;
+  }
+  .w-split-66{
+    max-width: 100%;
+  }
+
   .w-split{
     width:100% !important;
   }
   .w-flex{
     display:block;
   }
+  
+    .d-local-none{
+      display:block;
+    }
+    .d-local-block{
+      display:none;
+    }
+
+  @media (min-width: 853px) {
+    .d-local-none{
+      display:none !important;
+    }
+    .d-local-block{
+      display:block;
+    }
+    .w-split-33{
+      max-width: 33%;
+    }
+    .w-split-66{
+      max-width: 66%;
+    }
+  }
+
   @media (min-width: 1280px) {
+        
     .w-flex{
       display:flex;
     }
