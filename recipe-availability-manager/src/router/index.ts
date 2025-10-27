@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import RecipeCreatorView from '@/views/RecipeCreatorView.vue'
 import RecipeHubView from '@/views/RecipeHubView.vue'
 
 const router = createRouter({
@@ -8,8 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      name: 'recipe-hub',
+      component: RecipeHubView,
     },
     {
       path: '/about',
@@ -18,16 +16,6 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
-    },
-    {
-      path: '/recipe-creator',
-      name: 'recipe-creator',
-      component: RecipeCreatorView,
-    },
-    {
-      path: '/recipe-hub',
-      name: 'recipe-hub',
-      component: RecipeHubView,
     },
   ],
 })

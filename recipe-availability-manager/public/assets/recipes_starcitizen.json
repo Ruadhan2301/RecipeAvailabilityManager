@@ -16,7 +16,6 @@
         { "id": "ore_corundum", "display_name": "Corundum", "description": "", "is_collective": false },
         
         { "id": "harvestable_valakkar_pearl_aaa", "display_name": "Irradiated Valakkar Pearl (AAA)", "description": "", "is_collective": false },
-        { "id": "harvestable_valakkar_pearl_aa", "display_name": "Irradiated Valakkar Pearl (AA)", "description": "", "is_collective": false },
         { "id": "harvestable_valakkar_fang_juve", "display_name": "Irradiated Valakkar Fang (Juvenile)", "description": "", "is_collective": false },
         { "id": "harvestable_valakkar_fang_adult", "display_name": "Irradiated Valakkar Fang (Adult)", "description": "", "is_collective": false },
         { "id": "harvestable_valakkar_fang_apex", "display_name": "Irradiated Valakkar Fang (Apex)", "description": "", "is_collective": false },
@@ -483,7 +482,7 @@
     "ingredients":[
       {"ingredient_id":"vehicle_atls","quantity":1},
       {"ingredient_id":"favor_wikelo","quantity":3},
-      {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":10},
       {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":5},
       {"ingredient_id":"vehicle_weap_nn13","quantity":2}
     ]
@@ -687,7 +686,7 @@
     "description":"Guardian QI",
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
-      {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":15},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":15},
       {"ingredient_id":"other_dchs_05_compboard","quantity":15},
       {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":5}
     ]
@@ -802,7 +801,7 @@
       {"ingredient_id":"armor_helmet_ace","quantity":15},
       {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":20},
       {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":20},
-      {"ingredient_id":"ore_carinite_pure","quantity":20},
+      {"ingredient_id":"ore_carinite","quantity":20},
       {"ingredient_id":"other_finley_plushie","quantity":10},
       {"ingredient_id":"other_picoball","quantity":1},
       {"ingredient_id":"ore_janalite","quantity":5},
