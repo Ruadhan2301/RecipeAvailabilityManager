@@ -2,15 +2,12 @@
 import type { MetaIngredient } from '@/models/ingredient';
 import ContentBox from '../components/ContentBox.vue'
 import { useRecipeStore } from '@/stores/recipe-store';
-import { onMounted, watch, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import CounterCheckBox from '@/components/CounterCheckBox.vue';
 import Button from 'primevue/button';
 import Tabs from 'primevue/tabs';
 import TabList from 'primevue/tablist';
 import Tab from 'primevue/tab';
-import TabPanels from 'primevue/tabpanels';
-import TabPanel from 'primevue/tabpanel';
-
 
 
 const {
@@ -32,7 +29,7 @@ const recipeStore = useRecipeStore();
 const mobileTab = ref('0');
 
 onMounted(() => {
-  recipeStore.LoadFromJson('../assets/recipes_starcitizen.json');
+  //recipeStore.LoadFromJson('../assets/recipes_starcitizen.json');
 });
 
 function isRecipeFulfilled(recipe: { ingredients: MetaIngredient[] }) {
@@ -61,14 +58,12 @@ function recipeIngredientFulfillmentPercent(ingredient:MetaIngredient) {
   return Math.round((Math.min(selectedQuant, totalRequired) / totalRequired) * 100)
 }
 
-watch(
+/*watch(
   () => recipeStore.selectedIDs.values,
   (newVal) => console.log('selectedIDs changed:', newVal)
-);
+);*/
 
 function updateIngredientSelectedCount(id:string, value:number){
-  let text = "Setting " + id + " to " + value;
-  console.log(text);
   recipeStore.SetIngredientSelectedQuantity(id, value);
 }
 
@@ -171,7 +166,6 @@ function updateIngredientSelectedCount(id:string, value:number){
                     @update:increment="recipeStore.AddIngredientSelected(ingData.ingredient_id,1)"
                     @update:decrement="recipeStore.RemoveIngredientSelected(ingData.ingredient_id,1)" 
                     @update:model-value="(value: number) => {
-                      console.log('New value for ingredient', ingData.ingredient_id, ':', value);
                       recipeStore.SetIngredientSelectedQuantity(ingData.ingredient_id, value);
                     }"
                     class="ml-auto my-1"

@@ -18,6 +18,13 @@ import type { Ingredient, MetaIngredient } from '@/models/ingredient';
   }
 export const useRecipeStore = defineStore('recipes', () => {
 
+
+onMounted(() => {
+  getSelectedIDsFromStorage();
+  
+  LoadFromJson('../assets/recipes_starcitizen.json');
+});
+
 const ingredients = ref<Ingredient[]>([]);
   
   const recipes = ref<Recipe[]>([]);
@@ -25,22 +32,45 @@ const ingredients = ref<Ingredient[]>([]);
   const selectedIDs = ref<SelectedIngredient[]>([]);
   const ingredientSearchTerm = ref<string>('');
 
+  function updateLocalStorage(){
+    const jsonSelectedIDs = JSON.stringify(selectedIDs.value);
+    localStorage.setItem("selectedIDs",jsonSelectedIDs);
+  }
+
+  function getSelectedIDsFromStorage(){
+    const raw = localStorage.getItem("selectedIDs");
+    if (!raw) {
+      selectedIDs.value = [];
+      return;
+    }
+
+    try {
+      const parsed = JSON.parse(raw) as SelectedIngredient[];
+      // ensure it's an array and normalize entries to SelectedIngredient
+      selectedIDs.value = [];
+      parsed.forEach(element => {
+        selectedIDs.value = [...selectedIDs.value, {ingredient_id: element.ingredient_id, quantity: element.quantity}];
+      });
+    } catch (err) {
+      console.error('Error parsing selectedIDs from localStorage:', err);
+      selectedIDs.value = [];
+    }
+  }
+
   function AddIngredientSelected(id: string, quantity: number) {
     if(selectedIDs.value === null) {
       selectedIDs.value = [];
     }
-    console.log("Adding ingredient:", id, "Quantity:", quantity);
     const existing = selectedIDs.value.find(i => i.ingredient_id === id);
     if (existing) {
       existing.quantity += quantity;
     } else {
       selectedIDs.value = [...selectedIDs.value, {ingredient_id: id, quantity: quantity}];
     }
-    console.log("Selected IDs now:", selectedIDs.value);
+    updateLocalStorage();
   };
   
   function RemoveIngredientSelected(id: string, quantity: number) {
-    console.log("Removing ingredient:", id, "Quantity:", quantity);
     const existing = selectedIDs.value.find(i => i.ingredient_id === id);
     if (existing) {
       existing.quantity -= quantity;
@@ -48,11 +78,10 @@ const ingredients = ref<Ingredient[]>([]);
         selectedIDs.value = selectedIDs.value.filter(i => i.ingredient_id !== id);
       }
     }
-    console.log("Selected IDs now:", selectedIDs.value);
+    updateLocalStorage();
   }
 
   function toggleIngredientSelected(id: string) {
-    console.log("Toggling ingredient:", id);
     const existing = selectedIDs.value.find(i => i.ingredient_id === id);
     if (existing) {
       RemoveIngredientSelected(id, 1);
@@ -61,9 +90,7 @@ const ingredients = ref<Ingredient[]>([]);
     }
   }
   function SetIngredientSelectedQuantity(id: string, quantity: number) {
-    console.log("Setting ingredient quantity:", id, "Quantity:", quantity);
     const existing = selectedIDs.value.find(i => i.ingredient_id === id);
-    console.log("Existing:", existing);
     if (existing) {
       if (quantity <= 0) {
         selectedIDs.value = selectedIDs.value.filter(i => i.ingredient_id !== id);
@@ -75,7 +102,7 @@ const ingredients = ref<Ingredient[]>([]);
         selectedIDs.value = [...selectedIDs.value, {ingredient_id: id, quantity: quantity}];
       }
     }
-    console.log("Selected IDs now:", selectedIDs.value);
+    updateLocalStorage();
   }
 
   function ingredientMatchPercentage(recipe: Recipe): number {
@@ -95,7 +122,6 @@ const ingredients = ref<Ingredient[]>([]);
     await fetch(new URL(path, import.meta.url).href)    
       .then(response => response.json())
       .then((data: RecipeData) => {
-        console.log(data);
         //Filter ingredients to only those used in recipes
         ingredients.value = [...data.ingredients].filter(ing => 
           data.recipes.some(recipe => 
@@ -103,7 +129,8 @@ const ingredients = ref<Ingredient[]>([]);
           )
         );
         recipes.value = [...data.recipes];
-        selectedIDs.value = [];
+        
+        getSelectedIDsFromStorage();
       })
       .catch(error => {
         console.error('Error loading recipes from JSON:', error);

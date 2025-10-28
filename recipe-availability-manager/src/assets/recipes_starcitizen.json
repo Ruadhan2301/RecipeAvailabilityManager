@@ -115,22 +115,26 @@
     "id": "wikelo_favor_merc_scrip",
     "display_name": "Trade Merc Scrip for Favors?",
     "description": "1x Wikelo Favor for 50x MG Scrip",
+    "tags": ["Scrip","Favor"],
     "ingredients": [{"ingredient_id":"scrip_merc","quantity":50}]
   },
   {    "id": "wikelo_favor_council_scrip",
     "display_name": "Trade Council Scrip for Favors?",
     "description": "1x Wikelo Favor for 50x Council Scrip",
+    "tags": ["Scrip","Favor"],
     "ingredients": [{"ingredient_id":"scrip_council","quantity":50}]
   },
   {
     "id": "wikelo_favor_carinite",
     "display_name": "Turn Things to Favor",
     "description": "1x Wikelo Favor for 50x Carinite",
+    "tags": ["Favor"],
     "ingredients": [{"ingredient_id":"ore_carinite","quantity":50}]
   },
   {    "id": "wikelo_favor_worm",
     "display_name": "Trade Worm Parts for Favors?",
     "description": "1x Wikelo Favor",
+    "tags": ["Favor"],
     "ingredients": [
       {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":12}
     ]
@@ -147,6 +151,7 @@
     "id": "util_binoculars_xdl_mark1",
     "display_name": "Want Better Eyes",
     "description": "XDL 'Mark I' Monocular Rangefinder",
+    "tags": ["Gear"],
     "ingredients": [
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id": "harvestable_yormandi_eye", "quantity": 2},
@@ -156,6 +161,7 @@
   {    "id": "weapon_parallax_kopion_skull",
     "display_name": "Fun Kopion Skull Gun", 
     "description": "1x Parallax 'Fun Kopion Skull' Energy Assault Rifle",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"ore_jaclium","quantity":40},
       {"ingredient_id":"ore_saldynium","quantity":30},
@@ -168,6 +174,7 @@
     "id": "weapon_parallax_military_skull",
     "display_name": "Fun Military Skull Gun", 
     "description": "1x Parallax 'Fun Military Skull' Energy Assault Rifle",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"ore_jaclium","quantity":40},
       {"ingredient_id":"ore_saldynium","quantity":30},
@@ -180,6 +187,7 @@
     "id": "weapon_parallax_kopion_tooth",
     "display_name": "Fun Kopion Tooth Gun", 
     "description": "1x Parallax 'Fun Kopion Tooth' Energy Assault Rifle",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"ore_jaclium","quantity":40},
       {"ingredient_id":"ore_saldynium","quantity":30},
@@ -192,6 +200,7 @@
     "id": "weapon_parallax_military_tooth",
     "display_name": "Fun Military Tooth Gun", 
     "description": "1x Parallax 'Fun Military Tooth' Energy Assault Rifle",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"ore_jaclium","quantity":40},
       {"ingredient_id":"ore_saldynium","quantity":30},
@@ -204,6 +213,7 @@
     "id": "weapon_prism_rad",
     "display_name": "Make VOLT shotgun angrier", 
     "description": "1x Prism 'Irradiated' Laser Shotgun",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id":"weapon_prism","quantity":1},
@@ -215,6 +225,7 @@
     "id": "weapon_zenith_snow",
     "display_name": "Snow Snipe", 
     "description": "1x Zenith 'Snow Camo' Laser Sniper Rifle",
+    "tags": ["Weapon","Paint","Snow"],
     "ingredients": [
       {"ingredient_id":"drive_asd","quantity":10},
       {"ingredient_id":"weapon_zenith","quantity":1}
@@ -224,6 +235,7 @@
     "id": "weapon_fresnel_deepwater",
     "display_name": "Heavy Volt Zapper", 
     "description": "1x Fresnel 'Deepwater' Energy LMG",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"weapon_fresnel","quantity":1},      
       {"ingredient_id":"drive_asd","quantity":5},
@@ -236,6 +248,7 @@
     "id": "weapon_fresnel_yormandi",
     "display_name": "Yormandi Gun", 
     "description": "1x Fresnel 'Yormandi' LMG",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"weapon_fresnel","quantity":1},    
       {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
@@ -247,6 +260,7 @@
     "id": "weapon_quartz_navy",
     "display_name": "Volt gun more Navy-like", 
     "description": "1x Quartz 'Cobalt Camo' Energy SMG",
+    "tags": ["Weapon","Paint","Navy"],
     "ingredients": [
       {"ingredient_id":"weapon_quartz","quantity":1},    
       {"ingredient_id":"scrip_merc","quantity":30},
@@ -258,6 +272,7 @@
     "id": "weapon_quartz_jungle",
     "display_name": "Zappy gun more woodlike", 
     "description": "1x Quartz 'Jungle Camo' Energy SMG",
+    "tags": ["Weapon","Paint","Jungle"],
     "ingredients": [
       {"ingredient_id":"weapon_quartz","quantity":1},    
       {"ingredient_id":"scrip_merc","quantity":30},
@@ -268,6 +283,7 @@
     "id": "weapon_quartz_hunter",
     "display_name": "Make gun sandy", 
     "description": "1x Quartz 'Hunter Camo' Energy SMG",
+    "tags": ["Weapon","Paint","Desert"],
     "ingredients": [
       {"ingredient_id":"weapon_quartz","quantity":1},    
       {"ingredient_id":"scrip_merc","quantity":30},
@@ -279,6 +295,7 @@
     "id": "weapon_karna_ascension",
     "display_name": "Prettify Karna Gun", 
     "description": "1x Karna 'Ascension' Rifle",
+    "tags": ["Weapon","Paint", "Ascension"],
     "ingredients": [
       {"ingredient_id":"weapon_karna","quantity":1},    
       {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
@@ -291,6 +308,7 @@
     "id": "weapon_s71_ascension",
     "display_name": "Built on S71 rifle", 
     "description": "1x S71 'Ascension' Rifle",
+    "tags": ["Weapon","Paint", "Ascension"],
     "ingredients": [
       {"ingredient_id":"weapon_s71","quantity":1},    
       {"ingredient_id":"ore_carinite","quantity":10},
@@ -303,6 +321,7 @@
     "id": "weapon_coda_ascension",
     "display_name": "Fix up Coda gun", 
     "description": "1x Coda 'Ascension' Pistol",
+    "tags": ["Weapon","Paint", "Ascension"],
     "ingredients": [
       {"ingredient_id":"weapon_coda","quantity":1},    
       {"ingredient_id":"armor_helmet_ace","quantity":5},
@@ -314,6 +333,7 @@
     "id": "weapon_f55_mk1",
     "display_name": "F55 look better", 
     "description": "1x F55 'Mark 1' LMG",
+    "tags": ["Weapon","Paint"],
     "ingredients": [
       {"ingredient_id":"weapon_f55","quantity":1},    
       {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
@@ -325,6 +345,7 @@
     "id": "armor_xanthule_ascension",
     "display_name": "Xi'an Xanthule Suit made better", 
     "description": "1x Xanthule Ascension Helmet and suit",
+    "tags": ["Armor", "Paint", "Ascension"],
     "ingredients": [
       {"ingredient_id":"armor_suit_xanthule","quantity":1},
       {"ingredient_id":"armor_helmet_xanthule","quantity":1},  
@@ -337,6 +358,7 @@
     "id" :"armor_novikov_ascension",
     "display_name":"Walk in danger, Look good",
     "description":"Novikov 'Ascension' Set",
+    "tags": ["Armor","Paint", "Ascension"],
     "ingredients":[
       {"ingredient_id":"armor_suit_novikov","quantity":1},
       {"ingredient_id":"armor_helmet_novikov","quantity":1},
@@ -350,6 +372,7 @@
     "id" :"armor_venture_ascension",
     "display_name":"Adventure a A-Venture",
     "description":"Venture 'Ascension' Set",
+    "tags": ["Armor","Paint", "Ascension"],
     "ingredients":[
       {"ingredient_id":"armor_helmet_venture_white","quantity":1},
       {"ingredient_id":"armor_torso_venture","quantity":1},
@@ -365,6 +388,7 @@
     "id" :"armor_palatino_test",
     "display_name":"Test Armor",
     "description":"Palatino Mark 1 Set",
+    "tags": ["Armor","Paint"],
     "ingredients":[
       {"ingredient_id":"armor_helmet_palatino","quantity":1},
       {"ingredient_id":"armor_torso_palatino","quantity":1},
@@ -379,6 +403,7 @@
     "id" :"armor_geist_snow",
     "display_name":"Hide Snow Suit",
     "description":"Geist Snow Camo Set",
+    "tags": ["Armor","Paint","Snow"],
     "ingredients":[
       {"ingredient_id":"drive_asd","quantity":10},
       {"ingredient_id":"armor_helmet_geist_asd","quantity":1},
@@ -392,6 +417,7 @@
     "id":"armor_corbel_silver",
     "display_name":"Shiny Builder Suit",
     "description":"Corbel Crush Set",
+    "tags": ["Armor","Paint"],
     "ingredients":[
       {"ingredient_id":"armor_helmet_corbel_mire","quantity":1},
       {"ingredient_id":"armor_torso_corbel_mire","quantity":1},
@@ -408,6 +434,7 @@
     "id" :"armor_dcp_jungle",
     "display_name":"Want armor look like tree?",
     "description":"DCP Jungle Set",
+    "tags": ["Armor","Paint","Jungle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":3},
       {"ingredient_id":"armor_helmet_ace","quantity":5},
@@ -422,6 +449,7 @@
     "id" :"armor_dcp_hunter",
     "display_name":"Look at desert but don't see you",
     "description":"DCP Hunter Set",
+    "tags": ["Armor","Paint","Desert"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":3},
       {"ingredient_id":"armor_helmet_ace","quantity":5},
@@ -436,6 +464,7 @@
     "id" :"armor_dcp_navy",
     "display_name":"Make space navy armor",
     "description":"DCP Cobalt Camo Set",
+    "tags": ["Armor","Paint","Navy"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":3},
       {"ingredient_id":"armor_helmet_ace","quantity":5},
@@ -450,6 +479,7 @@
     "id":"armor_ana_endro",
     "display_name":"Armor with horn and string",
     "description":"Ana Armor Endro Set",
+    "tags": ["Armor","Paint"],
     "ingredients":[
       {"ingredient_id":"ore_saldynium","quantity":30},
       {"ingredient_id":"ore_carinite","quantity":15},
@@ -465,6 +495,7 @@
     "id" :"armor_bokto",
     "display_name":"Make glowy armor",
     "description":"Bokto Armor set",
+    "tags": ["Armor","Paint"],
     "ingredients":[
       {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1},
       {"ingredient_id":"armor_torso_antium","quantity":1},
@@ -480,6 +511,7 @@
     "id" :"vehicle_atls_ikti",
     "display_name":"Make ATLS shoot",
     "description":"ATLS IKTI",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"vehicle_atls","quantity":1},
       {"ingredient_id":"favor_wikelo","quantity":3},
@@ -492,6 +524,7 @@
     "id" :"vehicle_atls_geo_ikti",
     "display_name":"Make jumpy ATLS shoot",
     "description":"ATLS GEO IKTI",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"vehicle_atls_geo","quantity":1},
       {"ingredient_id":"vehicle_atls_ikti","quantity":1},
@@ -504,6 +537,7 @@
     "id" :"vehicle_atls_geo_snowland",
     "display_name":"ATLS Snowland Color",
     "description":"ATLS GEO 'Snowland'",
+    "tags": ["Vehicle","Paint"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":5},
@@ -515,6 +549,7 @@
     "id" :"vehicle_atls_geo_orangeline",
     "display_name":"ATLS Orange Line",
     "description":"ATLS GEO 'Orange Line'",
+    "tags": ["Vehicle","Paint"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id":"ore_quant","quantity":50},
@@ -528,6 +563,7 @@
     "id" :"vehicle_atls_geo_coolmetal",
     "display_name":"ATLS Cool Metal Color",
     "description":"ATLS GEO 'Cool Metal'",
+    "tags": ["Vehicle","Paint"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id":"ore_carinite","quantity":10},
@@ -539,6 +575,7 @@
     "id" :"vehicle_nox",
     "display_name":"Noxy Mod",
     "description":"Aopoa Nox",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":5}
     ]
@@ -547,6 +584,7 @@
     "id" :"vehicle_pulse",
     "display_name":"Pulse Plus",
     "description":"Mirai Pulse",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":5}
     ]
@@ -555,6 +593,7 @@
     "id" :"vehicle_ursa_medivac",
     "display_name":"Make a Ursa Mod",
     "description":"Ursa Medivac",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":5},
       {"ingredient_id":"ore_saldynium","quantity":5},
@@ -565,6 +604,7 @@
     "id" :"vehicle_golem",
     "display_name":"Golem Rocks",
     "description":"Drake Golem",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":5},
       {"ingredient_id":"drive_asd","quantity":15}
@@ -574,6 +614,7 @@
     "id" :"vehicle_intrepid",
     "display_name":"Upgrade Intrepid",
     "description":"Crusader Intrepid",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1},
       {"ingredient_id":"favor_wikelo","quantity":5}
@@ -583,6 +624,7 @@
     "id" :"vehicle_fortune",
     "display_name":"Fortune ship for you",
     "description":"Misc Fortune",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":6},
       {"ingredient_id":"ore_carinite_pure","quantity":1}
@@ -592,6 +634,7 @@
     "id" :"vehicle_spirit_c1",
     "display_name":"Spirit cargo mod",
     "description":"Crusader C1 Spirit",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":8},
       {"ingredient_id":"other_medal_tevarin_pristine","quantity":2}
@@ -601,6 +644,7 @@
     "id" :"vehicle_zeus_es",
     "display_name":"Zeus Special",
     "description":"Zeus Mk2 ES",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":10},
       {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":2}
@@ -610,6 +654,7 @@
     "id" :"vehicle_zeus_cl",
     "display_name":"Zeus Cargo Special",
     "description":"Zeus Mk2 CL",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"ore_carinite","quantity":24},
@@ -621,6 +666,7 @@
     "id" :"vehicle_starlancer_max",
     "display_name":"More than a max",
     "description":"Starlancer Max",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"armor_helmet_ace","quantity":15},
@@ -632,6 +678,7 @@
     "id" :"vehicle_constellation_taurus",
     "display_name":"Want Taurus ship",
     "description":"Constellation Taurus",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"ore_carinite_pure","quantity":5},
@@ -643,6 +690,7 @@
     "id" :"vehicle_sabre_peregrine",
     "display_name":"Peregrine Wikelo Mod",
     "description":"sabre Peregrine",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":8},
       {"ingredient_id":"other_dchs_05_compboard","quantity":4}
@@ -652,6 +700,7 @@
     "id" :"vehicle_sabre_firebird",
     "display_name":"Firebird Mod",
     "description":"Sabre Firebird",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":20},
       {"ingredient_id":"other_polaris_bit","quantity":1},
@@ -662,7 +711,8 @@
   {
     "id" :"vehicle_scorpius",
     "display_name":"Build a Mod Scorpius",
-    "description":"Scorpius",
+    "description":"RSI Scorpius",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":20},
       {"ingredient_id":"other_polaris_bit","quantity":1},
@@ -674,6 +724,7 @@
     "id" :"vehicle_hornet_super",
     "display_name":"Wikelo Navy F7",
     "description":"F7C-M Super Hornet Mk II",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":20},
       {"ingredient_id":"other_dchs_05_compboard","quantity":6},
@@ -685,6 +736,7 @@
     "id" :"vehicle_guardian_qi",
     "display_name":"Guardian take down ship",
     "description":"Guardian QI",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":15},
@@ -696,6 +748,7 @@
     "id" :"vehicle_f8c_military",
     "display_name":"F8 War Mod",
     "description":"F8C Lightning (Military Spec)",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":40},
       {"ingredient_id":"ore_carinite_pure","quantity":6},
@@ -708,6 +761,7 @@
     "id" :"vehicle_f8c_stealth",
     "display_name":"Sneaky Stabber",
     "description":"F8C Lightning (Stealth Spec)",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":40},
       {"ingredient_id":"other_dchs_05_compboard","quantity":20},
@@ -721,6 +775,7 @@
     "id" :"vehicle_terrapin_medivac",
     "display_name":"What is Terrapin?",
     "description":"Anvil Terrapin Medic",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"drive_asd","quantity":30},
@@ -731,6 +786,7 @@
     "id" :"vehicle_starlancer_tac",
     "display_name":"New Move Big Starlancer Ship",
     "description":"Misc Starlancer Tac",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"armor_helmet_ace","quantity":15},
@@ -743,6 +799,7 @@
     "id" :"vehicle_ares_inferno",
     "display_name":"Starfighter Inferno Special",
     "description":"Crusader Ares Inferno",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":15},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
@@ -754,6 +811,7 @@
     "id" :"vehicle_ares_ion",
     "display_name":"Sneaky Starfighter Ion",
     "description":"Crusader Ares Ion",
+    "tags": ["Vehicle"],
     "ingredients":[      
       {"ingredient_id":"favor_wikelo","quantity":15},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
@@ -765,6 +823,7 @@
     "id" :"vehicle_prowler_utility",
     "display_name":"Prowler More Utility",
     "description":"Prowler Utility",
+    "tags": ["Vehicle"],
     "ingredients":[      
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
@@ -777,6 +836,7 @@
     "id" :"vehicle_starlifter_a2",
     "display_name":"Starlifter A2 War Mod",
     "description":"A2 Hercules Starlifter",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"other_polaris_bit","quantity":20},
@@ -792,6 +852,7 @@
     "id" :"vehicle_polaris",
     "display_name":"New Make Polaris, Short Time Deal",
     "description":"Wikelo Polaris",
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"other_polaris_bit","quantity":25},

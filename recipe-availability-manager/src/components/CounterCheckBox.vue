@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import { defineProps } from 'vue'
-import Checkbox from 'primevue/checkbox';
-import Button from 'primevue/button';
 import InputNumber from 'primevue/inputnumber';
 
   //This component is a checkbox that shows if an ingredient is selected or not, but also allows for a quantity to be shown and incremented or decremented
@@ -71,26 +69,7 @@ const emit = defineEmits<{
 
 <template>
   <div style="height:30px;">
-    <!--<Checkbox 
-      v-if="props.max == undefined || props.max == 1" 
-      binary
-      v-model="valBool"
-      class="py-1"
-      style="float: right;"
-      @change="updateValBool()"
-    />-->
     <div class="d-flex align-items-center" style="float: right;">
-      <!--<Button 
-        :disabled="props.disabled || (props.modelValue <= 0)"
-        label="-"
-        type="button"
-        variant="outlined"
-        @click="$emit('update:decrement')"
-        style="width: 30px; height: 30px;"
-      />-->
-      <!--<span style="margin: 0 10px;">{{ props.modelValue || 0 }}</span>-->
-      <!--<input style="max-width:2rem;" class="text-center" type="number" step="any" v-model="val" @change="$emit('update:modelValue',val)"></input>-->
-      
       <InputNumber class="mx-1" style="width:7.75rem; height:2rem; text-align:center;" 
       v-model="val" inputId="horizontal-buttons" 
       showButtons buttonLayout="horizontal" :min="0" :max="99" :step="1" fluid>
@@ -101,14 +80,6 @@ const emit = defineEmits<{
             <span class="pi pi-minus" />
         </template>
     </InputNumber>
-      <!--<Button 
-        :disabled="props.disabled || (props.max != undefined && props.modelValue >= props.max)"
-        label="+"
-        type="button"
-        variant="outlined"
-        @click="$emit('update:increment')"
-        style="width: 30px; height: 30px;"
-      />-->
       </div>
   </div>
   
