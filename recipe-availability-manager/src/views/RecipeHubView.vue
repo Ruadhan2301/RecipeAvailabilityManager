@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import type { MetaIngredient } from '@/models/ingredient';
+import type { Recipe } from '@/models/recipes';
 import ContentBox from '../components/ContentBox.vue'
 import { useRecipeStore } from '@/stores/recipe-store';
-import { onMounted, ref } from 'vue';
+import { ref,computed } from 'vue';
 import CounterCheckBox from '@/components/CounterCheckBox.vue';
 import Button from 'primevue/button';
 import Tabs from 'primevue/tabs';
 import TabList from 'primevue/tablist';
 import Tab from 'primevue/tab';
+import TagDisplay from '@/components/TagDisplay.vue';
+import TagSelector from '@/components/TagSelector.vue';
 
 
 const {
@@ -28,8 +31,24 @@ const recipeStore = useRecipeStore();
 
 const mobileTab = ref('0');
 
-onMounted(() => {
-  //recipeStore.LoadFromJson('../assets/recipes_starcitizen.json');
+const selectedTags = ref<string[]>();
+
+//For each recipe, get all the Tags, remove duplicates, and add to a list which we then return.
+const aggregateTags = computed(() => {
+  // prefer using recipeStore to avoid destructure-reactivity issues
+  /*const source = Array.isArray((recipeStore.recipes as any)?.value)
+    ? (recipeStore.recipes as any).value
+    : (Array.isArray(recipes as any) ? (recipes as any) : (recipes as any)?.value ?? []);
+*/
+const source = recipeStore.recipes;
+  const set = new Set<string>();
+  for (const r of source) {
+    const tags = r?.tags ?? [];
+    for (const t of tags) {
+      if (t && typeof t === 'string') set.add(t.trim());
+    }
+  }
+  return Array.from(set).sort((a, b) => a.localeCompare(b));
 });
 
 function isRecipeFulfilled(recipe: { ingredients: MetaIngredient[] }) {
@@ -65,6 +84,15 @@ function recipeIngredientFulfillmentPercent(ingredient:MetaIngredient) {
 
 function updateIngredientSelectedCount(id:string, value:number){
   recipeStore.SetIngredientSelectedQuantity(id, value);
+}
+function recipeHasAnyTag(recipe:Recipe){
+  const recipeTags = recipe.tags ?? [];
+  const sel = selectedTags.value;
+  // If no tags selected, show all recipes
+  if (!sel || sel.length === 0) return true;
+
+  const selSet = new Set(sel.map(t => (t ?? '').trim().toLowerCase()));
+  return recipeTags.some(t => selSet.has((t ?? '').trim().toLowerCase()));
 }
 
 </script>
@@ -147,8 +175,17 @@ function updateIngredientSelectedCount(id:string, value:number){
       </template>
       <template #body>
         <p>List of recipes sorted and filtered by available ingredients</p>
-        <div v-for="recipe in recipeStore.sortedRecipes" :key="recipe.id">
-          <div class="w-flex p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
+        <div>
+          <TagSelector :tags="aggregateTags" :selected="selectedTags"
+          @update:selected="(value: string[]) => {
+            console.log('test',value)
+                      selectedTags = value;
+                    }"
+          ></TagSelector>
+        </div>
+        <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r))" :key="recipe.id">
+          <div class="p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
+            <div class="w-flex">
             <div class="w-split">
               <h2 class="font-bold">{{ recipe.display_name }}</h2>
               <p>{{ recipe.description }}</p>
@@ -175,6 +212,8 @@ function updateIngredientSelectedCount(id:string, value:number){
                 </li>
               </ul>
             </div>
+            </div>
+              <TagDisplay class="w-full" :tags="recipe.tags"></TagDisplay>
           </div>
         </div>
       </template>

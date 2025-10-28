@@ -143,6 +143,7 @@
     "id": "other_polaris_bit",
     "display_name": "Want Polaris? Need something special.",
     "description": "1x Polaris Bit for 24scu of Quantainium",
+    "tags": ["Other"],
     "ingredients": [
       {"ingredient_id":"ore_quant","quantity":24}
     ]
