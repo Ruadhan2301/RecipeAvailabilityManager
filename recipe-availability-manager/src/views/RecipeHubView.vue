@@ -3,7 +3,7 @@ import type { MetaIngredient } from '@/models/ingredient';
 import type { Recipe } from '@/models/recipes';
 import ContentBox from '../components/ContentBox.vue'
 import { useRecipeStore } from '@/stores/recipe-store';
-import { ref,computed } from 'vue';
+import { ref,computed, onMounted } from 'vue';
 import CounterCheckBox from '@/components/CounterCheckBox.vue';
 import Button from 'primevue/button';
 import Tabs from 'primevue/tabs';
@@ -12,6 +12,20 @@ import Tab from 'primevue/tab';
 import TagDisplay from '@/components/TagDisplay.vue';
 import TagSelector from '@/components/TagSelector.vue';
 
+const selectedTags = ref<string[]>();
+const deselectedTags = ref<string[]>();
+onMounted(() => {
+  
+    const tagData = localStorage.getItem("selectedTags");
+    if(tagData){
+      selectedTags.value = JSON.parse(tagData);
+    }
+    const deselectedTagData = localStorage.getItem("deselectedTags");
+    if(deselectedTagData){
+      deselectedTags.value = JSON.parse(deselectedTagData);
+    }
+    console.log(selectedTags.value, deselectedTags.value);
+});
 
 const {
   recipes,
@@ -31,7 +45,14 @@ const recipeStore = useRecipeStore();
 
 const mobileTab = ref('0');
 
-const selectedTags = ref<string[]>();
+
+
+  function updateTagsInLocalStorage(){
+    const jsonSelectedTags = JSON.stringify(selectedTags.value);
+    localStorage.setItem("selectedTags",jsonSelectedTags);
+    const jsonDeselectedTags = JSON.stringify(deselectedTags.value);
+    localStorage.setItem("deselectedTags",jsonDeselectedTags);
+  }
 
 //For each recipe, get all the Tags, remove duplicates, and add to a list which we then return.
 const aggregateTags = computed(() => {
@@ -93,6 +114,16 @@ function recipeHasAnyTag(recipe:Recipe){
 
   const selSet = new Set(sel.map(t => (t ?? '').trim().toLowerCase()));
   return recipeTags.some(t => selSet.has((t ?? '').trim().toLowerCase()));
+}
+
+function recipeHasNoDeselectedTags(recipe:Recipe){
+  const recipeTags = recipe.tags ?? [];
+  const desel = deselectedTags.value;
+  // If no tags deselected, show all recipes
+  if (!desel || desel.length === 0) return true;
+
+  const deselSet = new Set(desel.map(t => (t ?? '').trim().toLowerCase()));
+  return !recipeTags.some(t => deselSet.has((t ?? '').trim().toLowerCase()));
 }
 
 </script>
@@ -176,14 +207,18 @@ function recipeHasAnyTag(recipe:Recipe){
       <template #body>
         <p>List of recipes sorted and filtered by available ingredients</p>
         <div>
-          <TagSelector :tags="aggregateTags" :selected="selectedTags"
+          <TagSelector :tags="aggregateTags" :selected="selectedTags" :deselected="deselectedTags"
           @update:selected="(value: string[]) => {
-            console.log('test',value)
                       selectedTags = value;
+                      updateTagsInLocalStorage();
+                    }"
+                    @update:deselected="(value: string[]) => {
+                      deselectedTags = value;
+                      updateTagsInLocalStorage();
                     }"
           ></TagSelector>
         </div>
-        <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r))" :key="recipe.id">
+        <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r) && recipeHasNoDeselectedTags(r))" :key="recipe.id">
           <div class="p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
             <div class="w-flex">
             <div class="w-split">

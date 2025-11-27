@@ -22,7 +22,7 @@ export const useRecipeStore = defineStore('recipes', () => {
 onMounted(() => {
   getSelectedIDsFromStorage();
   
-  LoadFromJson('../assets/recipes_starcitizen.json?v_20251028');
+  LoadFromJson('../assets/recipes_starcitizen.json?v_20251127');
 });
 
 const ingredients = ref<Ingredient[]>([]);
