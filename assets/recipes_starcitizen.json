@@ -728,7 +728,7 @@
   {
     "id" :"vehicle_sabre_peregrine",
     "display_name":"Peregrine Wikelo Mod",
-    "description":"sabre Peregrine",
+    "description":"Sabre Peregrine",
     "tags": ["Vehicle","Contested Zones"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":8},
