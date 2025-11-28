@@ -117,6 +117,20 @@ const ingredients = ref<Ingredient[]>([]);
     return (matchCount / recipe.ingredients.length) * 100;
   }
 
+  function ingredientMatchRecipePercentage(recipe: Recipe): number {
+    if(selectedIDs.value.length === 0) return 0;
+    let matchPerc = 0;
+    recipe.ingredients.forEach(ingData => {
+      const selected = selectedIDs.value.find(i => i.ingredient_id === ingData.ingredient_id);
+      if (selected) {
+        let perc = selected.quantity / ingData.quantity;
+        if(perc > 1) perc = 1;
+        matchPerc += perc;
+      }
+    });
+    return (matchPerc / recipe.ingredients.length) * 100;
+  }
+
   async function LoadFromJson(path:string){
     //placeholder
     await fetch(new URL(path, import.meta.url).href)    
@@ -139,8 +153,8 @@ const ingredients = ref<Ingredient[]>([]);
 
   const sortedRecipes = computed(() => {
     return recipes.value.sort((a, b) => {
-      const aMatches = ingredientMatchPercentage(a);
-      const bMatches = ingredientMatchPercentage(b);
+      const aMatches = ingredientMatchRecipePercentage(a);
+      const bMatches = ingredientMatchRecipePercentage(b);
       return bMatches - aMatches; // Descending order
     });
   });
@@ -151,5 +165,5 @@ const ingredients = ref<Ingredient[]>([]);
     ).sort((a, b) => a.display_name.localeCompare(b.display_name));
   });
   
-  return { recipes, sortedRecipes,ingredients, sortedIngredients, selectedIDs, AddIngredientSelected, RemoveIngredientSelected,SetIngredientSelectedQuantity, toggleIngredientSelected,ingredientSearchTerm,LoadFromJson }
+  return { recipes, sortedRecipes,ingredients, sortedIngredients, selectedIDs, AddIngredientSelected, RemoveIngredientSelected,SetIngredientSelectedQuantity, toggleIngredientSelected,ingredientSearchTerm,LoadFromJson,ingredientMatchRecipePercentage }
 })

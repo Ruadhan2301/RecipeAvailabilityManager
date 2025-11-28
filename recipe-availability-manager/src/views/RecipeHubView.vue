@@ -38,7 +38,8 @@ const {
   SetIngredientSelectedQuantity,
   RemoveIngredientSelected,
   ingredientSearchTerm,
-  LoadFromJson
+  LoadFromJson,
+  ingredientMatchRecipePercentage
 } = useRecipeStore();
 
 const recipeStore = useRecipeStore();
@@ -206,6 +207,7 @@ function recipeHasNoDeselectedTags(recipe:Recipe){
       </template>
       <template #body>
         <p>List of recipes sorted and filtered by available ingredients</p>
+        <p style="font-size: x-small;">Tags allow you to whitelist or blacklist particular types of Recipe. Green are filtered to recipes that include this tag, Red are filtered to recipes that exclude the tag.</p>
         <div>
           <TagSelector :tags="aggregateTags" :selected="selectedTags" :deselected="deselectedTags"
           @update:selected="(value: string[]) => {
@@ -219,7 +221,8 @@ function recipeHasNoDeselectedTags(recipe:Recipe){
           ></TagSelector>
         </div>
         <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r) && recipeHasNoDeselectedTags(r))" :key="recipe.id">
-          <div class="p-2 w-100" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
+          <div class="p-2 w-100 relative" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
+            <div style="z-index:-1; background-color: #d4edda; position:absolute; left:0;bottom:0; height:0.35rem; border-top:1px solid lightgreen;" :style="{ right: (100 - ingredientMatchRecipePercentage(recipe)) + '%' }"></div>  
             <div class="w-flex">
             <div class="w-split">
               <h2 class="font-bold">{{ recipe.display_name }}</h2>
