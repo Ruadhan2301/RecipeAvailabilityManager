@@ -127,6 +127,12 @@ function recipeHasNoDeselectedTags(recipe:Recipe){
   return !recipeTags.some(t => deselSet.has((t ?? '').trim().toLowerCase()));
 }
 
+function IsRecipePermitted(recipe:Recipe){
+  // Check if recipe is permitted based on some criteria
+  // For now, we assume all recipes are permitted
+  return true;
+}
+
 </script>
 
 <template>
@@ -220,7 +226,7 @@ function recipeHasNoDeselectedTags(recipe:Recipe){
                     }"
           ></TagSelector>
         </div>
-        <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r) && recipeHasNoDeselectedTags(r))" :key="recipe.id">
+        <div v-for="recipe in recipeStore.sortedRecipes.filter((r) => recipeHasAnyTag(r) && recipeHasNoDeselectedTags(r)) && IsRecipePermitted(r)" :key="recipe.id">
           <div class="p-2 w-100 relative" :class="isRecipeFulfilled(recipe) ? 'completed-recipe' : ''" style="border: 1px solid grey; margin-bottom: 0.5rem;">
             <div style="z-index:-1; background-color: #d4edda; position:absolute; left:0;bottom:0; height:0.35rem; border-top:1px solid lightgreen;" :style="{ right: (100 - ingredientMatchRecipePercentage(recipe)) + '%' }"></div>  
             <div class="w-flex">

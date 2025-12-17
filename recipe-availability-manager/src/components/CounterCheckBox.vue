@@ -72,7 +72,7 @@ const emit = defineEmits<{
     <div class="d-flex align-items-center" style="float: right;">
       <InputNumber class="mx-1" style="width:7.75rem; height:2rem; text-align:center;" 
       v-model="val" inputId="horizontal-buttons" 
-      showButtons buttonLayout="horizontal" :min="0" :max="99" :step="1" fluid>
+      showButtons buttonLayout="horizontal" :min="0" :max="9999" :step="1" fluid>
         <template #incrementicon>
             <span class="pi pi-plus" />
         </template>

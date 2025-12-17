@@ -161,7 +161,7 @@
     "id": "util_binoculars_xdl_mark1",
     "display_name": "Want Better Eyes",
     "description": "XDL 'Mark I' Monocular Rangefinder",
-    "tags": ["Gear","Onyx"],
+    "tags": ["Gear","Onyx","Yormandi"],
     "ingredients": [
       {"ingredient_id":"favor_wikelo","quantity":1},
       {"ingredient_id": "harvestable_yormandi_eye", "quantity": 2},
@@ -173,7 +173,7 @@
     "id" :"weapon_boomtube_clanguard",
     "display_name":"Curious Weapon",
     "description":"Boomtube 'Clanguard' Rocket Launcher",
-    "tags": ["Weapon","Intersec"],
+    "tags": ["Weapon","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"weapon_boomtube","quantity":1},
       {"ingredient_id":"other_vanduul_plating","quantity":5},
@@ -271,7 +271,7 @@
     "id": "weapon_fresnel_yormandi",
     "display_name": "Yormandi Gun", 
     "description": "1x Fresnel 'Yormandi' LMG",
-    "tags": ["Weapon","Paint","Hathor","Onyx"],
+    "tags": ["Weapon","Paint","Hathor","Onyx","Yormandi"],
     "ingredients": [
       {"ingredient_id":"weapon_fresnel","quantity":1},    
       {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
@@ -356,7 +356,7 @@
     "id": "weapon_f55_mk1",
     "display_name": "F55 look better", 
     "description": "1x F55 'Mark 1' LMG",
-    "tags": ["Weapon","Paint","Hathor","Onyx"],
+    "tags": ["Weapon","Paint","Hathor","Onyx","Yormandi"],
     "ingredients": [
       {"ingredient_id":"weapon_f55","quantity":1},    
       {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
@@ -411,7 +411,7 @@
     "id" :"armor_palatino_test",
     "display_name":"Test Armor",
     "description":"Palatino Mark 1 Set",
-    "tags": ["Armor","Paint","Onyx"],
+    "tags": ["Armor","Paint","Onyx","Yormandi"],
     "ingredients":[
       {"ingredient_id":"armor_helmet_palatino","quantity":1},
       {"ingredient_id":"armor_torso_palatino","quantity":1},
@@ -457,7 +457,7 @@
     "id" : "armor_testudo_clanguard",
     "display_name":"Armor with Vanduul",
     "description":"Testudo 'Clanguard' Set",
-    "tags": ["Armor","Intersec"],
+    "tags": ["Armor","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"armor_helmet_testudo_turfwar","quantity":1},
       {"ingredient_id":"armor_torso_testudo_turfwar","quantity":1},
@@ -787,7 +787,7 @@
     "id" :"vehicle_guardian_mx",
     "display_name":"Guardian Wik-X",
     "description":"Guardian MX",
-    "tags": ["Vehicle","Intersec"],
+    "tags": ["Vehicle","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
       {"ingredient_id":"armor_helmet_ace","quantity":15},
@@ -851,7 +851,7 @@
     "id" :"vehicle_ares_inferno",
     "display_name":"Starfighter Inferno Special",
     "description":"Crusader Ares Inferno",
-    "tags": ["Vehicle","Onyx"],
+    "tags": ["Vehicle","Onyx","Yormandi"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":15},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
@@ -863,7 +863,7 @@
     "id" :"vehicle_ares_ion",
     "display_name":"Sneaky Starfighter Ion",
     "description":"Crusader Ares Ion",
-    "tags": ["Vehicle","Onyx"],
+    "tags": ["Vehicle","Onyx","Yormandi"],
     "ingredients":[      
       {"ingredient_id":"favor_wikelo","quantity":15},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
@@ -875,7 +875,7 @@
     "id" :"vehicle_prowler_utility",
     "display_name":"Prowle More Utility",
     "description":"Prowler Utility",
-    "tags": ["Vehicle","Onyx","Lazarus","Hathor"],
+    "tags": ["Vehicle","Onyx","Lazarus","Hathor","Yormandi"],
     "ingredients":[      
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
@@ -904,7 +904,7 @@
     "id" :"vehicle_meteor",
     "display_name":"RSI Meteor Mod",
     "description":"RSI Meteor",
-    "tags": ["Vehicle","Intersec"],
+    "tags": ["Vehicle","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":10},
       {"ingredient_id":"armor_helmet_ace","quantity":10},
