@@ -145,7 +145,7 @@
     "description": "1x Wikelo Favor",
     "tags": ["Favor","Lazarus"],
     "ingredients": [
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":12}
+      {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":12}
     ]
   },
   {
@@ -157,18 +157,7 @@
       {"ingredient_id":"ore_quant","quantity":24}
     ]
   },
-  {
-    "id": "util_binoculars_xdl_mark1",
-    "display_name": "Want Better Eyes",
-    "description": "XDL 'Mark I' Monocular Rangefinder",
-    "tags": ["Gear","Onyx","Yormandi"],
-    "ingredients": [
-      {"ingredient_id":"favor_wikelo","quantity":1},
-      {"ingredient_id": "harvestable_yormandi_eye", "quantity": 2},
-      {"ingredient_id": "harvestable_yormandi_tongue", "quantity": 1}
-    ]
-  },
-  
+    
   {
     "id" :"weapon_boomtube_clanguard",
     "display_name":"Curious Weapon",
@@ -176,8 +165,8 @@
     "tags": ["Weapon","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"weapon_boomtube","quantity":1},
-      {"ingredient_id":"other_vanduul_plating","quantity":5},
-      {"ingredient_id":"other_vanduul_metal","quantity":5}
+      {"ingredient_id":"other_vanduul_plating","quantity":2},
+      {"ingredient_id":"other_vanduul_metal","quantity":2}
     ]
   },
   {    
@@ -186,11 +175,11 @@
     "description": "1x Parallax 'Fun Kopion Skull' Energy Assault Rifle",
     "tags": ["Weapon","Paint","Hathor"],
     "ingredients": [
-      {"ingredient_id":"ore_jaclium","quantity":40},
-      {"ingredient_id":"ore_saldynium","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"ore_jaclium","quantity":20},
+      {"ingredient_id":"ore_saldynium","quantity":15},
+      {"ingredient_id":"ore_carinite","quantity":10},
       {"ingredient_id":"weapon_parallax","quantity":1},
-      {"ingredient_id":"harvestable_kopion_tundra_horn","quantity":35}
+      {"ingredient_id":"harvestable_kopion_tundra_horn","quantity":20}
     ]
   },
   {    
@@ -199,37 +188,11 @@
     "description": "1x Parallax 'Fun Military Skull' Energy Assault Rifle",
     "tags": ["Weapon","Paint","Hathor"],
     "ingredients": [
-      {"ingredient_id":"ore_jaclium","quantity":40},
-      {"ingredient_id":"ore_saldynium","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"ore_jaclium","quantity":20},
+      {"ingredient_id":"ore_saldynium","quantity":15},
+      {"ingredient_id":"ore_carinite","quantity":10},
       {"ingredient_id":"weapon_parallax","quantity":1},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":35}
-    ]
-  },
-  {    
-    "id": "weapon_parallax_kopion_tooth",
-    "display_name": "Fun Kopion Tooth Gun", 
-    "description": "1x Parallax 'Fun Kopion Tooth' Energy Assault Rifle",
-    "tags": ["Weapon","Paint","Hathor"],
-    "ingredients": [
-      {"ingredient_id":"ore_jaclium","quantity":40},
-      {"ingredient_id":"ore_saldynium","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":20},
-      {"ingredient_id":"weapon_parallax","quantity":1},
-      {"ingredient_id":"harvestable_kopion_tundra_horn","quantity":35}
-    ]
-  },
-  {    
-    "id": "weapon_parallax_military_tooth",
-    "display_name": "Fun Military Tooth Gun", 
-    "description": "1x Parallax 'Fun Military Tooth' Energy Assault Rifle",
-    "tags": ["Weapon","Paint","Hathor"],
-    "ingredients": [
-      {"ingredient_id":"ore_jaclium","quantity":40},
-      {"ingredient_id":"ore_saldynium","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":20},
-      {"ingredient_id":"weapon_parallax","quantity":1},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":35}
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20}
     ]
   },
   {    
@@ -250,21 +213,8 @@
     "description": "1x Zenith 'Snow Camo' Laser Sniper Rifle",
     "tags": ["Weapon","Paint","Snow","Onyx"],
     "ingredients": [
-      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"drive_asd","quantity":7},
       {"ingredient_id":"weapon_zenith","quantity":1}
-    ]
-  },
-  {    
-    "id": "weapon_fresnel_deepwater",
-    "display_name": "Heavy Volt Zapper", 
-    "description": "1x Fresnel 'Deepwater' Energy LMG",
-    "tags": ["Weapon","Paint","Onyx"],
-    "ingredients": [
-      {"ingredient_id":"weapon_fresnel","quantity":1},      
-      {"ingredient_id":"drive_asd","quantity":5},
-      {"ingredient_id":"other_rcmbnt-xtl-1","quantity":5},
-      {"ingredient_id":"other_rcmbnt-xtl-2","quantity":5},
-      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":5}
     ]
   },
   {    
@@ -274,139 +224,10 @@
     "tags": ["Weapon","Paint","Hathor","Onyx","Yormandi"],
     "ingredients": [
       {"ingredient_id":"weapon_fresnel","quantity":1},    
-      {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
-      {"ingredient_id":"harvestable_yormandi_tongue","quantity":2},
-      {"ingredient_id":"ore_carinite","quantity":20}
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":6},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":3}
     ]
-  },
-  {    
-    "id": "weapon_quartz_navy",
-    "display_name": "Volt gun more Navy-like", 
-    "description": "1x Quartz 'Cobalt Camo' Energy SMG",
-    "tags": ["Weapon","Paint","Navy"],
-    "ingredients": [
-      {"ingredient_id":"weapon_quartz","quantity":1},    
-      {"ingredient_id":"scrip_merc","quantity":30},
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"harvestable_quasigrazer_grassland_egg","quantity":50}
-    ]
-  },
-  {    
-    "id": "weapon_quartz_jungle",
-    "display_name": "Zappy gun more woodlike", 
-    "description": "1x Quartz 'Jungle Camo' Energy SMG",
-    "tags": ["Weapon","Paint","Jungle"],
-    "ingredients": [
-      {"ingredient_id":"weapon_quartz","quantity":1},    
-      {"ingredient_id":"scrip_merc","quantity":30},
-      {"ingredient_id":"armor_helmet_ace","quantity":5}
-    ]
-  },
-  {    
-    "id": "weapon_quartz_hunter",
-    "display_name": "Make gun sandy", 
-    "description": "1x Quartz 'Hunter Camo' Energy SMG",
-    "tags": ["Weapon","Paint","Desert"],
-    "ingredients": [
-      {"ingredient_id":"weapon_quartz","quantity":1},    
-      {"ingredient_id":"scrip_merc","quantity":30},
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"other_advocacy_badge","quantity":10}
-    ]
-  },
-  {    
-    "id": "weapon_karna_ascension",
-    "display_name": "Prettify Karna Gun", 
-    "description": "1x Karna 'Ascension' Rifle",
-    "tags": ["Weapon","Paint", "Ascension","Lazarus"],
-    "ingredients": [
-      {"ingredient_id":"weapon_karna","quantity":1},    
-      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":10},
-      {"ingredient_id":"harvestable_kopion_irrad_horn","quantity":10},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1}
-    ]
-  },
-  {    
-    "id": "weapon_s71_ascension",
-    "display_name": "Built on S71 rifle", 
-    "description": "1x S71 'Ascension' Rifle",
-    "tags": ["Weapon","Paint", "Ascension","Hathor"],
-    "ingredients": [
-      {"ingredient_id":"weapon_s71","quantity":1},    
-      {"ingredient_id":"ore_carinite","quantity":10},
-      {"ingredient_id":"ore_saldynium","quantity":10},
-      {"ingredient_id":"ore_jaclium","quantity":10},
-      {"ingredient_id":"ore_carinite_pure","quantity":1}
-    ]
-  },
-  {    
-    "id": "weapon_coda_ascension",
-    "display_name": "Fix up Coda gun", 
-    "description": "1x Coda 'Ascension' Pistol",
-    "tags": ["Weapon","Paint", "Ascension"],
-    "ingredients": [
-      {"ingredient_id":"weapon_coda","quantity":1},    
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1},
-      {"ingredient_id":"scrip_merc","quantity":30}
-    ]
-  },
-  {    
-    "id": "weapon_f55_mk1",
-    "display_name": "F55 look better", 
-    "description": "1x F55 'Mark 1' LMG",
-    "tags": ["Weapon","Paint","Hathor","Onyx","Yormandi"],
-    "ingredients": [
-      {"ingredient_id":"weapon_f55","quantity":1},    
-      {"ingredient_id":"harvestable_yormandi_eye","quantity":4},
-      {"ingredient_id":"harvestable_yormandi_tongue","quantity":2},
-      {"ingredient_id":"ore_carinite","quantity":20}
-    ]
-  },
-  {    
-    "id": "armor_xanthule_ascension",
-    "display_name": "Xi'an Xanthule Suit made better", 
-    "description": "1x Xanthule Ascension Helmet and suit",
-    "tags": ["Armor", "Paint", "Ascension"],
-    "ingredients": [
-      {"ingredient_id":"armor_suit_xanthule","quantity":1},
-      {"ingredient_id":"armor_helmet_xanthule","quantity":1},  
-      {"ingredient_id":"armor_helmet_ace","quantity":10},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1},
-      {"ingredient_id":"scrip_council","quantity":20}
-    ]
-  },
-  {
-    "id" :"armor_novikov_ascension",
-    "display_name":"Walk in danger, Look good",
-    "description":"Novikov 'Ascension' Set",
-    "tags": ["Armor","Paint", "Ascension","Lazarus"],
-    "ingredients":[
-      {"ingredient_id":"armor_suit_novikov","quantity":1},
-      {"ingredient_id":"armor_helmet_novikov","quantity":1},
-      {"ingredient_id":"scrip_merc","quantity":30},
-      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1}
-    ]
-  },
-  {
-    "id" :"armor_venture_ascension",
-    "display_name":"Adventure a A-Venture",
-    "description":"Venture 'Ascension' Set",
-    "tags": ["Armor","Paint", "Ascension","Hathor"],
-    "ingredients":[
-      {"ingredient_id":"armor_helmet_venture_white","quantity":1},
-      {"ingredient_id":"armor_torso_venture","quantity":1},
-      {"ingredient_id":"armor_legs_venture","quantity":1},
-      {"ingredient_id":"armor_arms_venture","quantity":1},
-      {"ingredient_id":"scrip_merc","quantity":30},
-      {"ingredient_id":"ore_saldynium","quantity":10},
-      {"ingredient_id":"ore_jaclium","quantity":10},
-      {"ingredient_id":"ore_carinite_pure","quantity":1}
-    ]
-  },
+  },  
   {
     "id" :"armor_palatino_test",
     "display_name":"Test Armor",
@@ -418,8 +239,8 @@
       {"ingredient_id":"armor_legs_palatino","quantity":1},
       {"ingredient_id":"armor_arms_palatino","quantity":1},
       {"ingredient_id":"armor_backpack_palatino","quantity":1},
-      {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
-      {"ingredient_id":"harvestable_yormandi_tongue","quantity":10}
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":14},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":7}
     ]
   },
   {
@@ -428,7 +249,7 @@
     "description":"Geist Snow Camo Set",
     "tags": ["Armor","Paint","Snow","Onyx"],
     "ingredients":[
-      {"ingredient_id":"drive_asd","quantity":10},
+      {"ingredient_id":"drive_asd","quantity":4},
       {"ingredient_id":"armor_helmet_geist_asd","quantity":1},
       {"ingredient_id":"armor_torso_geist_asd","quantity":1},
       {"ingredient_id":"armor_legs_geist_asd","quantity":1},
@@ -464,54 +285,8 @@
       {"ingredient_id":"armor_arms_testudo_turfwar","quantity":1},
       {"ingredient_id":"armor_legs_testudo_turfwar","quantity":1},
       {"ingredient_id":"armor_backpack_testudo_turfwar","quantity":1},      
-      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":1},
-      {"ingredient_id":"other_vanduul_plating","quantity":5},
-      {"ingredient_id":"other_vanduul_metal","quantity":5}
-    ]
-  },
-  {
-    "id" :"armor_dcp_jungle",
-    "display_name":"Want armor look like tree?",
-    "description":"DCP Jungle Set",
-    "tags": ["Armor","Paint","Jungle"],
-    "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":3},
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":50},
-      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
-      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
-    ]
-  },
-  {
-    "id" :"armor_dcp_hunter",
-    "display_name":"Look at desert but don't see you",
-    "description":"DCP Hunter Set",
-    "tags": ["Armor","Paint","Desert"],
-    "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":3},
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"other_advocacy_badge","quantity":20},
-      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
-      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
-    ]
-  },
-  {
-    "id" :"armor_dcp_navy",
-    "display_name":"Make space navy armor",
-    "description":"DCP Cobalt Camo Set",
-    "tags": ["Armor","Paint","Navy"],
-    "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":3},
-      {"ingredient_id":"armor_helmet_ace","quantity":5},
-      {"ingredient_id":"harvestable_quasigrazer_grassland_egg","quantity":5},
-      {"ingredient_id":"armor_torso_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_arms_adp_mk4_woodland","quantity":1},
-      {"ingredient_id":"armor_legs_adp_mk4_woodland","quantity":1},      
-      {"ingredient_id":"armor_helmet_adp_mk4_woodland","quantity":1}
+      {"ingredient_id":"other_vanduul_plating","quantity":15},
+      {"ingredient_id":"other_vanduul_metal","quantity":15}
     ]
   },
   {
@@ -520,9 +295,6 @@
     "description":"Ana Armor Endro Set",
     "tags": ["Armor","Paint","Hathor"],
     "ingredients":[
-      {"ingredient_id":"ore_saldynium","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":15},
-      {"ingredient_id":"ore_jaclium","quantity":45},
       {"ingredient_id":"ore_carinite_pure","quantity":1},
       {"ingredient_id":"armor_torso_antium","quantity":1},
       {"ingredient_id":"armor_helmet_antium","quantity":1},
@@ -540,10 +312,7 @@
       {"ingredient_id":"armor_torso_antium","quantity":1},
       {"ingredient_id":"armor_helmet_antium","quantity":1},
       {"ingredient_id":"armor_legs_antium","quantity":1},
-      {"ingredient_id":"armor_arms_antium","quantity":1},
-      {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":2},
-      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":15},
-      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20}
+      {"ingredient_id":"armor_arms_antium","quantity":1}
     ]
   },
   {
@@ -553,8 +322,7 @@
     "tags": ["Vehicle","Lazarus"],
     "ingredients":[
       {"ingredient_id":"vehicle_atls","quantity":1},
-      {"ingredient_id":"favor_wikelo","quantity":3},
-      {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":10},
+      {"ingredient_id":"favor_wikelo","quantity":2},
       {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":5},
       {"ingredient_id":"vehicle_weap_nn13","quantity":2}
     ]
@@ -563,13 +331,12 @@
     "id" :"vehicle_atls_geo_ikti",
     "display_name":"Make jumpy ATLS shoot",
     "description":"ATLS GEO IKTI",
-    "tags": ["Vehicle","Contested Zones"],
+    "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"vehicle_atls_geo","quantity":1},
       {"ingredient_id":"vehicle_atls_ikti","quantity":1},
       {"ingredient_id":"vehicle_weap_nn13","quantity":2},
-      {"ingredient_id":"favor_wikelo","quantity":1},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":1}
+      {"ingredient_id":"favor_wikelo","quantity":1}
     ]
   },
   {
@@ -579,7 +346,6 @@
     "tags": ["Vehicle","Paint","Lazarus"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
-      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":5},
       {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1},
       {"ingredient_id":"vehicle_atls","quantity":1}
     ]
@@ -591,11 +357,11 @@
     "tags": ["Vehicle","Paint"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
-      {"ingredient_id":"ore_quant","quantity":50},
+      {"ingredient_id":"ore_quant","quantity":36},
       {"ingredient_id":"vehicle_atls","quantity":1},
-      {"ingredient_id":"ore_copper","quantity":10},
-      {"ingredient_id":"ore_tungsten","quantity":10},
-      {"ingredient_id":"ore_corundum","quantity":10}
+      {"ingredient_id":"ore_copper","quantity":8},
+      {"ingredient_id":"ore_tungsten","quantity":8},
+      {"ingredient_id":"ore_corundum","quantity":8}
     ]
   },
   {
@@ -605,7 +371,6 @@
     "tags": ["Vehicle","Paint","Hathor"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":1},
-      {"ingredient_id":"ore_carinite","quantity":10},
       {"ingredient_id":"ore_carinite_pure","quantity":1},
       {"ingredient_id":"vehicle_atls","quantity":1}
     ]
@@ -616,7 +381,7 @@
     "description":"Aopoa Nox",
     "tags": ["Vehicle"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":5}
+      {"ingredient_id":"favor_wikelo","quantity":4}
     ]
   },
   {
@@ -625,7 +390,7 @@
     "description":"Mirai Pulse",
     "tags": ["Vehicle"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":5}
+      {"ingredient_id":"favor_wikelo","quantity":4}
     ]
   },
   {
@@ -634,9 +399,9 @@
     "description":"Ursa Medivac",
     "tags": ["Vehicle","Hathor"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":5},
-      {"ingredient_id":"ore_saldynium","quantity":5},
-      {"ingredient_id":"ore_jaclium","quantity":5}
+      {"ingredient_id":"favor_wikelo","quantity":4},
+      {"ingredient_id":"ore_saldynium","quantity":20},
+      {"ingredient_id":"ore_jaclium","quantity":20}
     ]
   },
   {
@@ -645,7 +410,7 @@
     "description":"Drake Golem",
     "tags": ["Vehicle","Onyx"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":5},
+      {"ingredient_id":"favor_wikelo","quantity":2},
       {"ingredient_id":"drive_asd","quantity":15}
     ]
   },
@@ -656,7 +421,7 @@
     "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1},
-      {"ingredient_id":"favor_wikelo","quantity":5}
+      {"ingredient_id":"favor_wikelo","quantity":3}
     ]
   },
   {
@@ -665,7 +430,7 @@
     "description":"Misc Fortune",
     "tags": ["Vehicle","Hathor"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":6},
+      {"ingredient_id":"favor_wikelo","quantity":3},
       {"ingredient_id":"ore_carinite_pure","quantity":1}
     ]
   },
@@ -676,7 +441,7 @@
     "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":8},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":2}
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
     ]
   },
   {
@@ -686,7 +451,7 @@
     "tags": ["Vehicle"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":10},
-      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":2}
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":1}
     ]
   },
   {
@@ -695,9 +460,9 @@
     "description":"Zeus Mk2 CL",
     "tags": ["Vehicle","Hathor"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":30},
-      {"ingredient_id":"ore_carinite","quantity":24},
-      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"favor_wikelo","quantity":20},
+      {"ingredient_id":"ore_carinite","quantity":15},
+      {"ingredient_id":"armor_helmet_ace","quantity":10},
       {"ingredient_id":"ore_carinite_pure","quantity":2}
     ]
   },
@@ -708,9 +473,9 @@
     "tags": ["Vehicle","Hathor","Lazarus"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
-      {"ingredient_id":"armor_helmet_ace","quantity":15},
-      {"ingredient_id":"ore_carinite_pure","quantity":5},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5}
+      {"ingredient_id":"armor_helmet_ace","quantity":10},
+      {"ingredient_id":"ore_carinite_pure","quantity":3},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":3}
     ]
   },
   {
@@ -720,9 +485,9 @@
     "tags": ["Vehicle","Hathor","Lazarus"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":30},
-      {"ingredient_id":"ore_carinite_pure","quantity":5},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
-      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":5}
+      {"ingredient_id":"ore_carinite_pure","quantity":3},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":3},
+      {"ingredient_id":"other_medal_gov_cart_pristine","quantity":3}
     ]
   },
   {
@@ -731,8 +496,8 @@
     "description":"Sabre Peregrine",
     "tags": ["Vehicle","Contested Zones"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":8},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":4}
+      {"ingredient_id":"favor_wikelo","quantity":4},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":1}
     ]
   },
   {
@@ -741,10 +506,10 @@
     "description":"Sabre Firebird",
     "tags": ["Vehicle","Contested Zones"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":20},
-      {"ingredient_id":"other_polaris_bit","quantity":1},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":1},
-      {"ingredient_id":"armor_helmet_ace","quantity":5}
+      {"ingredient_id":"favor_wikelo","quantity":15},
+      {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":4},
+      {"ingredient_id":"armor_helmet_ace","quantity":3}
     ]
   },
   {
@@ -753,10 +518,9 @@
     "description":"RSI Scorpius",
     "tags": ["Vehicle","Contested Zones","Hathor"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":20},
-      {"ingredient_id":"other_polaris_bit","quantity":1},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":12},
-      {"ingredient_id":"ore_carinite","quantity":10}
+      {"ingredient_id":"favor_wikelo","quantity":15},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":4},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
     ]
   },
   {
@@ -765,8 +529,8 @@
     "description":"F7C-M Super Hornet Mk II",
     "tags": ["Vehicle","Contested Zones"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":20},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":6},
+      {"ingredient_id":"favor_wikelo","quantity":16},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":3},
       {"ingredient_id":"armor_helmet_ace","quantity":5},
       {"ingredient_id":"other_medal_gov_cart_pristine","quantity":1}
     ]
@@ -777,10 +541,10 @@
     "description":"Guardian QI",
     "tags": ["Vehicle","Lazarus","Contested Zones"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"favor_wikelo","quantity":25},
       {"ingredient_id":"harvestable_valakkar_pearl_aa","quantity":15},
       {"ingredient_id":"other_dchs_05_compboard","quantity":15},
-      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":5}
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":2}
     ]
   },
   {
@@ -789,9 +553,9 @@
     "description":"Guardian MX",
     "tags": ["Vehicle","Intersec","Vanduul"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":30},
+      {"ingredient_id":"favor_wikelo","quantity":25},
       {"ingredient_id":"armor_helmet_ace","quantity":15},
-      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":4},
+      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":2},
       {"ingredient_id":"other_vanduul_plating","quantity":30},
       {"ingredient_id":"other_vanduul_metal","quantity":30}
     ]
@@ -803,10 +567,9 @@
     "tags": ["Vehicle","Hathor","Lazarus"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":40},
-      {"ingredient_id":"ore_carinite_pure","quantity":6},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":6},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":6},
-      {"ingredient_id":"vehicle_atls_ikti","quantity":1}
+      {"ingredient_id":"ore_carinite_pure","quantity":4},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":4},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":4}
     ]
   },
   {
@@ -816,11 +579,9 @@
     "tags": ["Vehicle","Hathor","Lazarus","Contested Zones"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":40},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":20},
-      {"ingredient_id":"ore_carinite_pure","quantity":5},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
-      {"ingredient_id":"armor_suit_xanthule_ascension","quantity":5},
-      {"ingredient_id":"armor_helmet_xanthule_ascension","quantity":5}
+      {"ingredient_id":"other_dchs_05_compboard","quantity":15},
+      {"ingredient_id":"ore_carinite_pure","quantity":3},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":3}
     ]
   },
   {
@@ -829,8 +590,8 @@
     "description":"Anvil Terrapin Medic",
     "tags": ["Vehicle","Onyx"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":30},
-      {"ingredient_id":"drive_asd","quantity":30},
+      {"ingredient_id":"favor_wikelo","quantity":15},
+      {"ingredient_id":"drive_asd","quantity":10},
       {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
     ]
   },
@@ -842,9 +603,11 @@
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"armor_helmet_ace","quantity":15},
-      {"ingredient_id":"drive_asd","quantity":50},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":5}
+      {"ingredient_id":"drive_asd","quantity":30},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":3},
+      {"ingredient_id":"other_medal_tevarin_pristine","quantity":3},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":3},
+      {"ingredient_id":"ore_carinite_pure","quantity":3}
     ]
   },
   {
@@ -853,10 +616,10 @@
     "description":"Crusader Ares Inferno",
     "tags": ["Vehicle","Onyx","Yormandi"],
     "ingredients":[
-      {"ingredient_id":"favor_wikelo","quantity":15},
-      {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
-      {"ingredient_id":"armor_helmet_ace","quantity":10},
-      {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
+      {"ingredient_id":"favor_wikelo","quantity":10},
+      {"ingredient_id":"harvestable_yormandi_tongue","quantity":5},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":1}
     ]
   },
   {
@@ -865,23 +628,23 @@
     "description":"Crusader Ares Ion",
     "tags": ["Vehicle","Onyx","Yormandi"],
     "ingredients":[      
-      {"ingredient_id":"favor_wikelo","quantity":15},
-      {"ingredient_id":"harvestable_yormandi_eye","quantity":5},
+      {"ingredient_id":"favor_wikelo","quantity":10},
+      {"ingredient_id":"harvestable_yormandi_eye","quantity":10},
       {"ingredient_id":"armor_helmet_ace","quantity":10},
       {"ingredient_id":"other_medal_tevarin_pristine","quantity":1}
     ]
   },
   {
     "id" :"vehicle_prowler_utility",
-    "display_name":"Prowle More Utility",
+    "display_name":"Prowler More Utility",
     "description":"Prowler Utility",
     "tags": ["Vehicle","Onyx","Lazarus","Hathor","Yormandi"],
     "ingredients":[      
-      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"favor_wikelo","quantity":40},
       {"ingredient_id":"harvestable_yormandi_eye","quantity":20},
       {"ingredient_id":"harvestable_yormandi_tongue","quantity":10},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":5},
-      {"ingredient_id":"ore_carinite_pure","quantity":5}
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":3},
+      {"ingredient_id":"ore_carinite_pure","quantity":3}
     ]
   },
   {
@@ -893,11 +656,11 @@
       {"ingredient_id":"favor_wikelo","quantity":50},
       {"ingredient_id":"other_polaris_bit","quantity":20},
       {"ingredient_id":"scrip_merc","quantity":20},
-      {"ingredient_id":"drive_asd","quantity":10},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":10},
-      {"ingredient_id": "other_medal_tevarin_pristine", "quantity": 10},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":10},
-      {"ingredient_id":"ore_carinite_pure","quantity":10}
+      {"ingredient_id":"drive_asd","quantity":6},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":6},
+      {"ingredient_id": "other_medal_tevarin_pristine", "quantity": 6},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":6},
+      {"ingredient_id":"ore_carinite_pure","quantity":6}
     ]
   },
   {
@@ -907,8 +670,8 @@
     "tags": ["Vehicle","Intersec","Vanduul"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":10},
-      {"ingredient_id":"armor_helmet_ace","quantity":10},
-      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":2},
+      {"ingredient_id":"armor_helmet_ace","quantity":5},
+      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":1},
       {"ingredient_id":"other_vanduul_plating","quantity":10},
       {"ingredient_id":"other_vanduul_metal","quantity":10}
     ]
@@ -920,22 +683,8 @@
     "tags": ["Vehicle","Onyx","Lazarus","Hathor","Contested Zones"],
     "ingredients":[
       {"ingredient_id":"favor_wikelo","quantity":50},
-      {"ingredient_id":"other_polaris_bit","quantity":25},
-      {"ingredient_id":"other_dchs_05_compboard","quantity":20},
-      {"ingredient_id":"ore_carinite","quantity":20},
-      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":20},
-      {"ingredient_id":"scrip_merc","quantity":20},
-      {"ingredient_id":"armor_helmet_ace","quantity":15},
-      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":20},
-      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":20},
-      {"ingredient_id":"ore_carinite_pure","quantity":20},
-      {"ingredient_id":"other_finley_plushie","quantity":10},
-      {"ingredient_id":"other_picoball","quantity":1},
-      {"ingredient_id":"ore_janalite","quantity":5},
-      {"ingredient_id":"weapon_pistol_wowblast_red","quantity":1},
-      {"ingredient_id":"ore_atlasium","quantity":48},
-      {"ingredient_id":"weapon_scourge_railgun","quantity":10},
-      {"ingredient_id":"drive_asd","quantity":20},
+      {"ingredient_id":"other_polaris_bit","quantity":15},
+      {"ingredient_id":"drive_asd","quantity":15},
       {"ingredient_id":"other_rcmbnt-pwl-1","quantity":1},
       {"ingredient_id":"other_rcmbnt-pwl-2","quantity":1},
       {"ingredient_id":"other_rcmbnt-pwl-3","quantity":1},
@@ -944,9 +693,110 @@
       {"ingredient_id":"other_rcmbnt-rgl-3","quantity":1},
       {"ingredient_id":"other_rcmbnt-xtl-1","quantity":1},
       {"ingredient_id":"other_rcmbnt-xtl-2","quantity":1},
-      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":1}
+      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":1},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":10},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":20},
+      {"ingredient_id":"scrip_merc","quantity":20},
+      {"ingredient_id":"armor_helmet_ace","quantity":15},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":15},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":15},
+      {"ingredient_id":"ore_carinite_pure","quantity":15}
+    ]
+  },
+  {
+    "id" :"vehicle_asgard",
+    "display_name":"Asgard Fight Mod",
+    "description":"Wikelo Asgard",
+    "tags": ["Vehicle","Onyx"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"drive_asd","quantity":3},
+      {"ingredient_id":"other_rcmbnt-pwl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-pwl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-pwl-3","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-3","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":5}
+    ]
+  },
+  {
+    "id" :"vehicle_wolf",
+    "display_name":"Where wolf? Here wolf",
+    "description":"Wikelo L-21 Wolf",
+    "tags": ["Vehicle","Vanduul"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":10},
+      {"ingredient_id":"other_vanduul_metal","quantity":10},
+      {"ingredient_id":"other_vanduul_plating","quantity":10},
+      {"ingredient_id":"other_artefact_fragment_large_pristine","quantity":1}
+    ]
+  },
+  {
+    "id" :"vehicle_raft",
+    "display_name":"Ready for Raft?",
+    "description":"Wikelo Raft",
+    "tags": ["Vehicle","Lazarus"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":8},
+      {"ingredient_id":"harvestable_valakkar_fang_adult","quantity":10},
+      {"ingredient_id":"harvestable_valakkar_fang_juve","quantity":20},
+      {"ingredient_id":"harvestable_kopion_irrad_horn","quantity":5},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":1}
+    ]
+  },
+  {
+    "id" :"vehicle_prospector",
+    "display_name":"Prospects look good",
+    "description":"Wikelo Prospector",
+    "tags": ["Vehicle","Hathor"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":6},
+      {"ingredient_id":"ore_carinite","quantity":20},
+      {"ingredient_id":"ore_saldynium","quantity":30},
+      {"ingredient_id":"ore_jaclium","quantity":40},
+      {"ingredient_id":"ore_carinite_pure","quantity":1}
+    ]
+  },
+  {
+    "id" :"vehicle_idris",
+    "display_name":"Idris-P",
+    "description":"Wikelo Idris-P - Requires 999 Reputation",
+    "tags": ["Vehicle","Onyx","Lazarus","Hathor","Contested Zones"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":50},
+      {"ingredient_id":"other_polaris_bit","quantity":50},
+      {"ingredient_id":"other_dchs_05_compboard","quantity":50},
+      {"ingredient_id":"ore_carinite","quantity":50},
+      {"ingredient_id":"harvestable_valakkar_fang_apex","quantity":50},
+      {"ingredient_id":"scrip_merc","quantity":50},
+      {"ingredient_id":"armor_helmet_ace","quantity":50},
+      {"ingredient_id":"harvestable_valakkar_pearl_aaa","quantity":30},
+      {"ingredient_id":"other_medal_6thplatoon_pristine","quantity":30},
+      {"ingredient_id":"drive_asd","quantity":30},
+      {"ingredient_id":"ore_carinite_pure","quantity":30},
+      {"ingredient_id":"other_rcmbnt-pwl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-pwl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-pwl-3","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-rgl-3","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-1","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-2","quantity":5},
+      {"ingredient_id":"other_rcmbnt-xtl-3","quantity":5}
+    ]
+  },
+  {
+    "id" :"vehicle_wolf-mil",
+    "display_name":"Most Special Wolf",
+    "description":"Wikelo L-21 Wolf Military + Antium Midnight Set + Fresnel 'Deepwater' Energy LMG - Requires 340 reputation",
+    "tags": ["Vehicle"],
+    "ingredients":[
+      {"ingredient_id":"favor_wikelo","quantity":5}
     ]
   }
-
   ]
 }
